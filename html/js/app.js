@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 .join('');
 
             const priorityBadgeHTML = nade.priority === 'main' 
-                ? `<span class="type-badge" style="background: rgba(241, 196, 15, 0.1); color: #f1c40f; border: 1px solid rgba(241, 196, 15, 0.25);">⭐️ Core</span>` 
+                ? `<span class="type-badge" style="background: rgba(241, 196, 15, 0.1); color: #f1c40f; border: 1px solid rgba(241, 196, 15, 0.25);">⭐️</span>` 
                 : '';
 
             // Appends the absolute project path parent directory structure automatically

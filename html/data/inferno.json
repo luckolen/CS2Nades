@@ -1,0 +1,67 @@
+[
+  {
+    "id": "inferno-b-ct-smoke",
+    "title": "B Site CT Boost Smoke",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Jumpthrow",
+    "images": [
+      { "label": "Where to Stand", "src": "inferno/b_ct_smoke_stand.jpg" },
+      { "label": "Where to Aim", "src": "inferno/b_ct_smoke_aim.jpg" }
+    ],
+    "notes": "Essential B execute utility piece. Completely blooms off the CT rotator alleyway and boost shelf."
+  },
+  {
+    "id": "inferno-b-coffins-smoke",
+    "title": "B Site Coffins Smoke",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "inferno/coffins_smoke_stand.jpg" },
+      { "label": "Where to Aim", "src": "inferno/coffins_smoke_aim.jpg" }
+    ],
+    "notes": "Blocks off lines from the platform/coffin defensive perimeter. Pair this with the CT smoke to completely seal B site."
+  },
+  {
+    "id": "inferno-a-pit-molotov",
+    "title": "A Site Pit Core Molotov",
+    "side": "t",
+    "types": ["molotov"],
+    "priority": "main",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "inferno/a_pit_molotov_stand.jpg" },
+      { "label": "Where to Aim", "src": "inferno/a_pit_molotov_aim.jpg" }
+    ],
+    "notes": "Forces defensive anchors playing in the corner box of Pit out into unsafe visual territory near the lane balcony."
+  },
+  {
+    "id": "inferno-a-moto-smoke",
+    "title": "A Moto / Library Smoke (From Second Mid)",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "situational",
+    "throwType": "Jumpthrow",
+    "images": [
+      { "label": "Where to Stand", "src": "inferno/a_moto_smoke_stand.jpg" },
+      { "label": "Where to Aim", "src": "inferno/a_moto_smoke_aim.jpg" }
+    ],
+    "notes": "Great for A-long wraps or lane pushes. Cuts off cross lines from rotators standing near Library/Moto paths."
+  },
+  {
+    "id": "ct-inferno-deep-banana",
+    "title": "Deep Banana Early Control Molotov",
+    "side": "ct",
+    "types": ["molotov"],
+    "priority": "main",
+    "throwType": "Normal / Running",
+    "images": [
+      { "label": "Where to Stand", "src": "inferno/ct_banana_molo_stand.jpg" },
+      { "label": "Where to Aim", "src": "inferno/ct_banana_molo_aim.jpg" }
+    ],
+    "notes": "Thrown instantly at round entry over B-site wall to deep-burn the bottom of Banana stairs, completely breaking basic T rushes."
+  }
+]

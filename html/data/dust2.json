@@ -1,0 +1,67 @@
+[
+  {
+    "id": "dust2-a-long-corner",
+    "title": "A Long Corner Smoke",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Jumpthrow",
+    "images": [
+      { "label": "Where to Stand", "src": "dust2/long_corner_stand.jpg" },
+      { "label": "Where to Aim", "src": "dust2/long_corner_aim.jpg" }
+    ],
+    "notes": "Essential T-Side utility. Completely blocks off the CT AWPer angle looking from Long A Corner toward Long Doors."
+  },
+  {
+    "id": "dust2-xbox-smoke",
+    "title": "Top Mid Xbox Smoke (From Spawn)",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Jumpthrow",
+    "images": [
+      { "label": "Where to Stand", "src": "dust2/xbox_smoke_stand.jpg" },
+      { "label": "Where to Aim", "src": "dust2/xbox_smoke_aim.jpg" }
+    ],
+    "notes": "Lands cleanly on top of Xbox. Blocks Mid doors line of sight from CT spawn, allowing safe passage to Short A."
+  },
+  {
+    "id": "dust2-b-doors-smoke",
+    "title": "B Site Doors Smoke (From T-Ramp)",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Jumpthrow",
+    "images": [
+      { "label": "Where to Stand", "src": "dust2/b_doors_stand.jpg" },
+      { "label": "Where to Aim", "src": "dust2/b_doors_aim.jpg" }
+    ],
+    "notes": "Blocks crossfires and early rotations coming from Mid/CT spawn during a fast B execute."
+  },
+  {
+    "id": "ct-dust2-deep-tunnels",
+    "title": "Deep Upper Tunnels Smoke",
+    "side": "ct",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "dust2/ct_tunnel_smoke_stand.jpg" },
+      { "label": "Where to Aim", "src": "dust2/ct_tunnel_smoke_aim.jpg" }
+    ],
+    "notes": "Thrown immediately at round start to bottle up Terrorists inside Upper Tunnels and deny fast B platform rushes."
+  },
+  {
+    "id": "ct-dust2-long-car-flash",
+    "title": "A Long Defensive Retake Pop-Flash",
+    "side": "ct",
+    "types": ["flash"],
+    "priority": "situational",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "dust2/ct_long_flash_stand.jpg" },
+      { "label": "Where to Aim", "src": "dust2/ct_long_flash_aim.jpg" }
+    ],
+    "notes": "Bounces off the Long corner wall perfectly to completely blind T entries pushing from Long doors toward Corner/Car."
+  }
+]
