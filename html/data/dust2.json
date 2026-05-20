@@ -1,6 +1,6 @@
 [
   {
-    "id": "dust2-a-long-corner",
+    "id": "dust2-t-long-corner",
     "title": "A Long Corner Smoke",
     "side": "t",
     "types": ["smoke"],
@@ -10,10 +10,10 @@
       { "label": "Where to Stand", "src": "dust2/long_corner_stand.jpg" },
       { "label": "Where to Aim", "src": "dust2/long_corner_aim.jpg" }
     ],
-    "notes": "Essential T-Side utility. Completely blocks off the CT AWPer angle looking from Long A Corner toward Long Doors."
+    "notes": "Essential T-Side utility. Completely blocks off the primary CT AWPer angle looking from Long A Corner toward Long Doors."
   },
   {
-    "id": "dust2-xbox-smoke",
+    "id": "dust2-t-xbox-smoke",
     "title": "Top Mid Xbox Smoke (From Spawn)",
     "side": "t",
     "types": ["smoke"],
@@ -23,10 +23,10 @@
       { "label": "Where to Stand", "src": "dust2/xbox_smoke_stand.jpg" },
       { "label": "Where to Aim", "src": "dust2/xbox_smoke_aim.jpg" }
     ],
-    "notes": "Lands cleanly on top of Xbox. Blocks Mid doors line of sight from CT spawn, allowing safe passage to Short A."
+    "notes": "Lands cleanly on top of Xbox. Blocks Mid doors line of sight from CT spawn, allowing safe, unscouted passage up to Short A."
   },
   {
-    "id": "dust2-b-doors-smoke-tunnel",
+    "id": "dust2-t-b-doors-smoke-tunnel",
     "title": "B Site Doors Smoke (From tunnel)",
     "side": "t",
     "types": ["smoke"],
@@ -36,23 +36,36 @@
       { "label": "Where to Stand", "src": "dust2/b_doors_stand_1.jpg" },
       { "label": "Where to Aim", "src": "dust2/b_doors_aim_1.jpg" }
     ],
-    "notes": "Blocks crossfires and early rotations coming from Mid/CT spawn during a B execute."
+    "notes": "Safe pocket lineup inside Upper Tunnels. Screens off deep CT Spawn rotators and mid crossfires during a B-site execute."
   },
   {
-    "id": "dust2-b-doors-smoke-ramp",
+    "id": "dust2-t-b-doors-smoke-ramp",
     "title": "B Site Doors Smoke (From T-Ramp)",
     "side": "t",
     "types": ["smoke"],
     "priority": "main",
     "throwType": "Jumpthrow",
     "images": [
-      { "label": "Where to Stand", "src": "dust2/b_doors_stand_2.jpg" },
+      { "label": "Where to Stand", "src": "dust2/b_ramp_stand.jpg" },
       { "label": "Where to Aim", "src": "dust2/b_doors_aim_2.jpg" }
     ],
-    "notes": "Blocks crossfires and early rotations coming from Mid/CT spawn during a B execute."
+    "notes": "Thrown safely from outside T-Ramp. Blocks crossfires from Mid/CT spawn, enabling your entry fraggers to flood out of Tunnels safely."
   },
   {
-    "id": "t-dust2-mid-door-hinge",
+    "id": "dust2-t-b-window-smoke",
+    "title": "B Site Window Smoke (From T-Ramp)",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Jumpthrow",
+    "images": [
+      { "label": "Where to Stand", "src": "dust2/b_ramp_stand.jpg" },
+      { "label": "Where to Aim", "src": "dust2/b_window_smoke_aim.jpg" }
+    ],
+    "notes": "Mandatory companion piece to the B Doors smoke. Completely blocks off the high window vantage point to deny defensive crossfires during a B-tunnels flood."
+  },
+  {
+    "id": "dust2-t-mid-door-hinge",
     "title": "Mid door hinge",
     "side": "t",
     "types": ["smoke"],
@@ -62,10 +75,10 @@
       { "label": "Where to Stand", "src": "dust2/mid_door_hinge_stand.jpg" },
       { "label": "Where to Aim", "src": "dust2/mid_door_hinge_aim.jpg" }
     ],
-    "notes": "Crosshair slightly to the right of the antenna, vertical line alligns with the closed window."
+    "notes": "Blinds mid doors AWPers to cover a clean team cross into Lower Tunnels. Lineup: Aim crosshair slightly right of the antenna, aligning the vertical crosshair line with the closed window."
   },
   {
-    "id": "t-dust2-long-car-molotov",
+    "id": "dust2-t-long-car-molotov",
     "title": "Long car molotov",
     "side": "t",
     "types": ["molotov"],
@@ -75,19 +88,45 @@
       { "label": "Where to Stand", "src": "dust2/long_car_molotov_stand.jpg" },
       { "label": "Where to Aim", "src": "dust2/long_car_molotov_aim.jpg" }
     ],
-    "notes": "Molotovs the car at long."
+    "notes": "Flushes out aggressive defensive anchors holding the heavy close angle at Long Car. Requires standard running forward momentum before hitting the jumpthrow bind."
   },
   {
-    "id": "ct-dust2-b-back-platform-molotov",
-    "title": "Molotov to retake B by burning back platform",
+    "id": "dust2-ct-b-back-platform-molotov",
+    "title": "B Back Platform Retake Molotov",
     "side": "ct",
     "types": ["molotov"],
     "priority": "situational",
     "throwType": "Jumpthrow",
     "images": [
-      { "label": "Where to Stand", "src": "dust2/back-platform-molotov_stand.jpg" },
-      { "label": "Where to Aim", "src": "dust2/back-platform-molotov_aim.jpg" }
+      { "label": "Where to Stand", "src": "dust2/back_platform_molotov_stand.jpg" },
+      { "label": "Where to Aim", "src": "dust2/back_platform_molotov_aim.jpg" }
     ],
-    "notes": "Burn the back of the platform."
+    "notes": "Crucial B-retake utility. Spreads deep to force out post-plant T anchors camping safely behind the back platform fencing into open site crossfires."
+  },
+  {
+    "id": "dust2-t-ct-spawn-from-xbox-smoke",
+    "title": "Smoke CT spawn from XBox",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Jumpthrow",
+    "images": [
+      { "label": "Where to Stand", "src": "dust2/spawn_from_xbox_stand.jpg" },
+      { "label": "Where to Aim", "src": "dust2/spawn_from_xbox_aim.jpg" }
+    ],
+    "notes": "Perfect tool for a Mid-to-B split execution. Mechanics: Line up your aim while fully crouched behind Xbox, stand all the way up, then execute the jumpthrow."
+  },
+  {
+    "id": "dust2-t-a-cross-from-dumpster",
+    "title": "Smoke A cross from dumpster",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Jumpthrow",
+    "images": [
+      { "label": "Where to Stand", "src": "dust2/a_cross_from_dumpster_stand.jpg" },
+      { "label": "Where to Aim", "src": "dust2/a_cross_from_dumpster_aim.jpg" }
+    ],
+    "notes": "Essential for setting up an A-Site split. Completely cuts off CT Spawn and Elevator sightlines so your Long entry players can safely cross to site. Alignment: Ensure your crosshair's -1y line perfectly aligns with the wall decal."
   }
 ]
