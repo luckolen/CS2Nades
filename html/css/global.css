@@ -1,0 +1,380 @@
+/* ==========================================================================
+   1. VARIABLES & BASE LAYOUT
+   ========================================================================== */
+:root {
+    --bg-color: #12141c;
+    --card-bg: #1a1d29;
+    --text-color: #f3f4f6;
+    --accent-color: #de9b35; /* CS2 Orange */
+    --border-color: #2d3142;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+h1 { 
+    margin: 0; 
+    color: var(--text-color); 
+}
+
+.subtitle { 
+    color: var(--accent-color); 
+    margin: 5px 0 0 0; 
+    font-weight: 600; 
+}
+
+/* Global Utility Visibility Modifier for JS Filtering */
+.hidden {
+    display: none !important;
+}
+
+/* ==========================================================================
+   2. HEADER NAVIGATION (Back Links)
+   ========================================================================== */
+.header-nav {
+    margin-bottom: 15px;
+}
+
+.back-to-maps {
+    display: inline-flex;
+    align-items: center;
+    color: #8a8f98; /* Muted silver text */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.15s ease;
+}
+
+.back-to-maps:hover {
+    color: var(--accent-color);
+}
+
+/* ==========================================================================
+   3. MULTI-AXIS FILTER SYSTEM
+   ========================================================================== */
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.filter-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.15s ease;
+}
+
+.filter-btn:hover {
+    border-color: var(--accent-color);
+}
+
+.filter-btn.active {
+    background-color: var(--accent-color);
+    color: #000;
+    border-color: var(--accent-color);
+}
+
+/* Faction-Specific Filter Button Styling */
+
+/* T-Side Button Styles */
+.filter-btn[data-filter-side="t"]:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+.filter-btn[data-filter-side="t"].active {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #12141c; /* Dark text for contrast */
+}
+
+/* CT-Side Button Styles */
+.filter-btn[data-filter-side="ct"]:hover {
+    border-color: #48dbfb;
+    color: #48dbfb;
+}
+.filter-btn[data-filter-side="ct"].active {
+    background-color: #3498db;
+    border-color: #3498db;
+    color: #12141c; /* Dark text for contrast */
+}
+
+/* ==========================================================================
+   4. HOMEPAGE MAP SELECTION GRID
+   ========================================================================== */
+.map-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.map-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.map-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-color);
+}
+
+.map-name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.map-status {
+    font-size: 0.8rem;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.map-status.active {
+    background-color: rgba(222, 155, 53, 0.15);
+    color: var(--accent-color);
+    border: 1px solid rgba(222, 155, 53, 0.3);
+}
+
+.map-status.pending {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #8a8f98;
+    border: 1px solid var(--border-color);
+}
+
+/* ==========================================================================
+   5. TACTICAL UTILITY GRID & GRENADE CARDS
+   ========================================================================== */
+.utility-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grenade-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.grenade-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.title-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.grenade-title { 
+    font-size: 1.25rem; 
+    font-weight: bold; 
+    margin: 0; 
+    cursor: pointer;
+    transition: color 0.15s ease;
+}
+
+.grenade-title:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.grenade-title.clicked-flash {
+    color: #2ecc71 !important; /* Visual link confirmation flash */
+    text-decoration: none;
+}
+
+.throw-type { 
+    background-color: var(--border-color); 
+    color: var(--text-color); 
+    padding: 4px 10px; 
+    border-radius: 4px; 
+    font-size: 0.85rem; 
+    font-weight: bold; 
+}
+
+/* Image Display Layer */
+.image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+@media (max-width: 768px) {
+    .image-container { 
+        grid-template-columns: 1fr; 
+    }
+}
+
+.img-box { 
+    position: relative; 
+}
+
+.img-box img { 
+    width: 100%; 
+    border-radius: 6px; 
+    display: block; 
+    border: 1px solid var(--border-color); 
+}
+
+.label { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    background: rgba(0, 0, 0, 0.75); 
+    padding: 2px 8px; 
+    border-radius: 4px; 
+    font-size: 0.8rem; 
+    z-index: 2;
+}
+
+/* Strategy Notes */
+.grenade-notes {
+    margin-top: 15px;
+    padding-top: 12px;
+    border-top: 1px dashed var(--border-color);
+    color: #a8b2c1;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.grenade-notes:empty {
+    display: none;
+}
+
+/* ==========================================================================
+   6. BADGES (Side & Type)
+   ========================================================================== */
+.side-badge, .type-badge {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+/* Faction Signifiers */
+.side-badge.t-side {
+    background-color: rgba(222, 155, 53, 0.12);
+    color: var(--accent-color);
+    border: 1px solid rgba(222, 155, 53, 0.25);
+}
+
+.side-badge.ct-side {
+    background-color: rgba(52, 152, 219, 0.12);
+    color: #48dbfb;
+    border: 1px solid rgba(52, 152, 219, 0.25);
+}
+
+/* Grenade Type Variations */
+.type-badge.smoke {
+    background-color: rgba(52, 152, 219, 0.15);
+    color: #3498db;
+    border: 1px solid rgba(52, 152, 219, 0.3);
+}
+
+.type-badge.molotov {
+    background-color: rgba(231, 76, 60, 0.15);
+    color: #e74c3c;
+    border: 1px solid rgba(231, 76, 60, 0.3);
+}
+
+.type-badge.flash {
+    background-color: rgba(241, 196, 15, 0.15);
+    color: #f1c40f;
+    border: 1px solid rgba(241, 196, 15, 0.3);
+}
+
+.type-badge.he {
+    background-color: rgba(46, 204, 113, 0.15);
+    color: #2ecc71;
+    border: 1px solid rgba(46, 204, 113, 0.3);
+}
+
+/* ==========================================================================
+   7. LIGHTBOX OVERLAY & SCALE ZOOM ENGINE
+   ========================================================================== */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 11, 16, 0.97);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden; /* Lock viewport clipping while processing scaled zooms */
+}
+
+/* Perfect Flexbox positioning layer */
+.lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    border: 1px solid var(--border-color);
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hardware-accelerated 150% scale targeting the pixel center directly */
+.lightbox.zoomed-mode img {
+    transform: scale(1.5);
+    cursor: zoom-out;
+}

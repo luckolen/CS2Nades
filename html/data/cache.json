@@ -1,0 +1,119 @@
+[
+  {
+    "id": "a-connector-smoke",
+    "title": "A Connector Smoke",
+    "side": "ct",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "cache/a_connector_location.jpg" },
+      { "label": "Where to Aim", "src": "cache/a_connector_aim.jpg" }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "a-waterfall",
+    "title": "A Waterfall",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Aim", "src": "cache/a_waterfall_smoke_aim.jpg" },
+      { "label": "Zoom in", "src": "cache/a_waterfall_smoke_aim_zoom.jpg" }
+    ],
+    "notes": "Keep the 1x in the brown edge and it should land correctly."
+  },
+  {
+    "id": "b-ct-smoke",
+    "title": "B CT Smoke",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Left + Right + Jump",
+    "images": [
+      { "label": "Where to Stand", "src": "cache/b_sunroom_location_1.jpg" },
+      { "label": "Where to Aim", "src": "cache/b_ct_smoke_aim.jpg" }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "b-headshot-molotov",
+    "title": "B Headshot Molotov",
+    "side": "t",
+    "types": ["molotov"],
+    "priority": "main",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "cache/b_sunroom_location_2.jpg" },
+      { "label": "Where to Aim", "src": "cache/b_headshot_molotov_aim.jpg" }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "b-front-site-molotov",
+    "title": "B Front Site Molotov",
+    "side": "t",
+    "types": ["molotov", "flash"],
+    "priority": "main",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "cache/b_sunroom_location_1.jpg" },
+      { "label": "Where to Aim", "src": "cache/b_front_site_molotov_aim.jpg" }
+    ],
+    "notes": "Same lineup works for both molotov and flash. Headshot will not be blinded so perfect to throw after somebody threw a molotov there."
+  },
+  {
+    "id": "b-heaven-smoke",
+    "title": "B Heaven Smoke",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "cache/b_heaven_location.jpg" },
+      { "label": "Where to Aim", "src": "cache/b_heaven_aim.jpg" }
+    ],
+    "notes": "Stand in front of the dot on top of the green wall. Vertical line of the crosshair should be on the lines on the wall when throwing."
+  },
+  {
+    "id": "mid-connector-smoke",
+    "title": "Mid connector smoke",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Shift walk jump",
+    "images": [
+      { "label": "Where to Stand", "src": "cache/mid_connector_location.jpg" },
+      { "label": "Where to Aim", "src": "cache/mid_connector_aim.jpg" }
+    ],
+    "notes": "Shift walk forwards till -1y is on the bottom of the C, jump throw"
+  },
+  {
+    "id": "mid-criss-cross-left-smoke",
+    "title": "Mid Criss-Cross Left smoke",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "cache/mid_criss_cross_left_location.jpg" },
+      { "label": "Where to Aim", "src": "cache/mid_criss_cross_left_aim.jpg" }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "mid-criss-cross-right-smoke",
+    "title": "Mid Criss-Cross Right smoke",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "cache/mid_criss_cross_right_location.jpg" },
+      { "label": "Where to Aim", "src": "cache/mid_criss_cross_right_aim.jpg" }
+    ],
+    "notes": ""
+  }
+]

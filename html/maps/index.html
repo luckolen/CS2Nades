@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS2 Tactical Utility Index</title>
+    <!-- Linked Centralized Stylesheet -->
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+
+    <header>
+        <!-- Back Navigation Link -->
+        <div class="header-nav">
+            <a href="../index.html" class="back-to-maps">← Back to All Maps</a>
+        </div>
+
+        <!-- Injected dynamically by js/app.js (e.g., DE_CACHE, DE_MIRAGE) -->
+        <h1 id="map-title">Loading Map...</h1>
+        <p class="subtitle" id="map-subtitle">Tactical Utility Index</p>
+
+        <!-- Three-Axis Filter Dashboard -->
+        <div class="filter-group">
+            
+            <!-- Row 1: Side Filters -->
+            <div class="filter-container" id="side-filters">
+                <button class="filter-btn active" data-filter-side="all">All Sides</button>
+                <button class="filter-btn" data-filter-side="t">T Side</button>
+                <button class="filter-btn" data-filter-side="ct">CT Side</button>
+            </div>
+
+            <!-- Row 2: Type Filters -->
+            <div class="filter-container" id="type-filters">
+                <button class="filter-btn active" data-filter-type="all">All Types</button>
+                <button class="filter-btn" data-filter-type="smoke">Smokes</button>
+                <button class="filter-btn" data-filter-type="molotov">Molotovs</button>
+                <button class="filter-btn" data-filter-type="flash">Flashes</button>
+                <button class="filter-btn" data-filter-type="he">HE Grenades</button>
+            </div>
+
+            <!-- Row 3: Priority Filters -->
+            <div class="filter-container" id="priority-filters">
+                <button class="filter-btn active" data-filter-priority="all">All Utility</button>
+                <button class="filter-btn" data-filter-priority="main">⭐️ Main / Essential</button>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- The core rendering zone where js/app.js injects cards from JSON -->
+    <div class="utility-grid" id="utility-grid">
+        <!-- Loading state fallback if network latency occurs -->
+        <div class="grenade-card" style="text-align: center; padding: 40px; color: #8a8f98;">
+            <p>Fetching tactical inventory data stream...</p>
+        </div>
+    </div>
+
+    <!-- Centralized App Engine Logic -->
+    <script src="../js/app.js"></script>
+</body>
+</html>
