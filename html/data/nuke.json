@@ -1,32 +1,32 @@
 [
   {
-    "id": "nuke-outside-cross-front",
+    "id": "nuke-t-outside-cross-front",
     "title": "Outside Main Wall Smoke (Front)",
     "side": "t",
     "types": ["smoke"],
     "priority": "main",
     "throwType": "Jumpthrow",
     "images": [
-      { "label": "Where to Stand", "src": "nuke/outside_front_stand.jpg" },
+      { "label": "Where to Stand", "src": "nuke/outside_smokes_stand_1.jpg" },
       { "label": "Where to Aim", "src": "nuke/outside_front_aim.jpg" }
     ],
-    "notes": "Part one of the standard multi-smoke wall. Shuts down the deep garage/CT red yard sightlines."
+    "notes": "First half of the standard outside tactical screen. Blocks off close Garage and deep CT Red yard sightlines to allow safe outside scaling."
   },
   {
-    "id": "nuke-outside-cross-back",
+    "id": "nuke-t-outside-cross-back",
     "title": "Outside Main Wall Smoke (Back/Secret Link)",
     "side": "t",
     "types": ["smoke"],
     "priority": "main",
     "throwType": "Jumpthrow",
     "images": [
-      { "label": "Where to Stand", "src": "nuke/outside_back_stand.jpg" },
+      { "label": "Where to Stand", "src": "nuke/outside_smokes_stand_1.jpg" },
       { "label": "Where to Aim", "src": "nuke/outside_back_aim.jpg" }
     ],
-    "notes": "Part two of the defensive screen line. Overlaps with the front smoke to create a safe cross entirely down into Secret."
+    "notes": "Second half of the outside tactical screen. Overlaps perfectly with the front smoke to create a blind corridor for crossing completely down into Secret."
   },
   {
-    "id": "nuke-lobby-ramp-molotov",
+    "id": "nuke-t-lobby-ramp-molotov",
     "title": "Ramp / Trophy Room Entry Molotov",
     "side": "t",
     "types": ["molotov"],
@@ -36,10 +36,10 @@
       { "label": "Where to Stand", "src": "nuke/lobby_ramp_molo_stand.jpg" },
       { "label": "Where to Aim", "src": "nuke/lobby_ramp_molo_aim.jpg" }
     ],
-    "notes": "Flushes out aggressive CT shotgun or rifle setups holding tight angles directly at the bottom of the Ramp layout."
+    "notes": "Flushes out aggressive CT anchors holding close setup angles or shotguns directly at the bottom of the Ramp boundary line."
   },
   {
-    "id": "ct-nuke-squeaky-smoke",
+    "id": "nuke-ct-squeaky-smoke",
     "title": "Squeaky Door Anti-Rush Smoke",
     "side": "ct",
     "types": ["smoke"],
@@ -49,10 +49,10 @@
       { "label": "Where to Stand", "src": "nuke/ct_squeaky_smoke_stand.jpg" },
       { "label": "Where to Aim", "src": "nuke/ct_squeaky_smoke_aim.jpg" }
     ],
-    "notes": "Locks down the Squeaky door threshold immediately, preventing fast inner A site vent-dive strategies."
+    "notes": "Essential round-start containment utility. Blocks off the Squeaky door threshold instantly to deny fast Terrorist inner A-site executes or vent dives."
   },
   {
-    "id": "ct-nuke-outside-molo",
+    "id": "nuke-ct-outside-molotov",
     "title": "Outside Cross Counter-Molotov",
     "side": "ct",
     "types": ["molotov"],
@@ -62,10 +62,10 @@
       { "label": "Where to Stand", "src": "nuke/ct_outside_molo_stand.jpg" },
       { "label": "Where to Aim", "src": "nuke/ct_outside_molo_aim.jpg" }
     ],
-    "notes": "Thrown over Mini roof structure to land deep inside the T-yard crossing lane, breaking their wall setup timings."
+    "notes": "Excellent defensive tool. Thrown over the Mini roof structure into the T-yard crossing lane to break or delay the Terrorist outside wall execution timing."
   },
   {
-    "id": "nuke-top-hut-molotov",
+    "id": "nuke-t-top-hut-molotov",
     "title": "Top Hut / Mustang Molotov (From T-Roof)",
     "side": "t",
     "types": ["molotov"],
@@ -75,6 +75,6 @@
       { "label": "Where to Stand", "src": "nuke/top_hut_molo_stand.jpg" },
       { "label": "Where to Aim", "src": "nuke/top_hut_molo_aim.jpg" }
     ],
-    "notes": "Essential for fast A rushes. Spreads across the entire top roof structure of Hut to completely flush out the close anchor. Crucial note: ensure the roof skylight glass is broken before throwing!"
+    "notes": "Mandatory A-site execute piece. Spreads across the entirety of Top Hut to completely flush out the close crossfire anchor. Crucial: Make sure a teammate shoots out the lobby ceiling glass panels before throwing!"
   }
 ]
