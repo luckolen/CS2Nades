@@ -26,42 +26,68 @@
     "notes": "Lands cleanly on top of Xbox. Blocks Mid doors line of sight from CT spawn, allowing safe passage to Short A."
   },
   {
-    "id": "dust2-b-doors-smoke",
+    "id": "dust2-b-doors-smoke-tunnel",
+    "title": "B Site Doors Smoke (From tunnel)",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "situational",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "dust2/b_doors_stand_1.jpg" },
+      { "label": "Where to Aim", "src": "dust2/b_doors_aim_1.jpg" }
+    ],
+    "notes": "Blocks crossfires and early rotations coming from Mid/CT spawn during a B execute."
+  },
+  {
+    "id": "dust2-b-doors-smoke-ramp",
     "title": "B Site Doors Smoke (From T-Ramp)",
     "side": "t",
     "types": ["smoke"],
     "priority": "main",
     "throwType": "Jumpthrow",
     "images": [
-      { "label": "Where to Stand", "src": "dust2/b_doors_stand.jpg" },
-      { "label": "Where to Aim", "src": "dust2/b_doors_aim.jpg" }
+      { "label": "Where to Stand", "src": "dust2/b_doors_stand_2.jpg" },
+      { "label": "Where to Aim", "src": "dust2/b_doors_aim_2.jpg" }
     ],
-    "notes": "Blocks crossfires and early rotations coming from Mid/CT spawn during a fast B execute."
+    "notes": "Blocks crossfires and early rotations coming from Mid/CT spawn during a B execute."
   },
   {
-    "id": "ct-dust2-deep-tunnels",
-    "title": "Deep Upper Tunnels Smoke",
-    "side": "ct",
+    "id": "t-dust2-mid-door-hinge",
+    "title": "Mid door hinge",
+    "side": "t",
     "types": ["smoke"],
     "priority": "main",
-    "throwType": "Normal",
+    "throwType": "Jumpthrow",
     "images": [
-      { "label": "Where to Stand", "src": "dust2/ct_tunnel_smoke_stand.jpg" },
-      { "label": "Where to Aim", "src": "dust2/ct_tunnel_smoke_aim.jpg" }
+      { "label": "Where to Stand", "src": "dust2/mid_door_hinge_stand.jpg" },
+      { "label": "Where to Aim", "src": "dust2/mid_door_hinge_aim.jpg" }
     ],
-    "notes": "Thrown immediately at round start to bottle up Terrorists inside Upper Tunnels and deny fast B platform rushes."
+    "notes": "Crosshair slightly to the right of the antenna, vertical line alligns with the closed window."
   },
   {
-    "id": "ct-dust2-long-car-flash",
-    "title": "A Long Defensive Retake Pop-Flash",
-    "side": "ct",
-    "types": ["flash"],
-    "priority": "situational",
-    "throwType": "Normal",
+    "id": "t-dust2-long-car-molotov",
+    "title": "Long car molotov",
+    "side": "t",
+    "types": ["molotov"],
+    "priority": "main",
+    "throwType": "W + Jumpthrow",
     "images": [
-      { "label": "Where to Stand", "src": "dust2/ct_long_flash_stand.jpg" },
-      { "label": "Where to Aim", "src": "dust2/ct_long_flash_aim.jpg" }
+      { "label": "Where to Stand", "src": "dust2/long_car_molotov_stand.jpg" },
+      { "label": "Where to Aim", "src": "dust2/long_car_molotov_aim.jpg" }
     ],
-    "notes": "Bounces off the Long corner wall perfectly to completely blind T entries pushing from Long doors toward Corner/Car."
+    "notes": "Molotovs the car at long."
+  },
+  {
+    "id": "ct-dust2-b-back-platform-molotov",
+    "title": "Molotov to retake B by burning back platform",
+    "side": "ct",
+    "types": ["molotov"],
+    "priority": "situational",
+    "throwType": "Jumpthrow",
+    "images": [
+      { "label": "Where to Stand", "src": "dust2/back-platform-molotov_stand.jpg" },
+      { "label": "Where to Aim", "src": "dust2/back-platform-molotov_aim.jpg" }
+    ],
+    "notes": "Burn the back of the platform."
   }
 ]
