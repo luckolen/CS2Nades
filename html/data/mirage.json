@@ -232,7 +232,7 @@
       { "label": "Zoom in", "src": "mirage/window_insta_5_zoom.jpg" }
     ],
     "notes": "Throw immediately at round start without moving from Spawn Location #5."
-  },  
+  },
   {
     "id": "mirage-window-top-mid",
     "title": "Mid Window (from top mid)",
@@ -399,14 +399,27 @@
     "id": "ct-palace-molotov",
     "title": "Palace God-Molotov",
     "side": "ct",
-    "types": ["molotov"],
+    "types": ["molotov","he", "smoke", "flash"],
     "priority": "main",
     "throwType": "Normal",
     "images": [
       { "label": "Where to Stand", "src": "mirage/ct_palace_molotov_stand.jpg" },
       { "label": "Where to Aim", "src": "mirage/ct_palace_molotov_aim.jpg" }
     ],
-    "notes": "Thrown from Stairs or CT lines to deep-burn inside Palace, breaking the T execute rush timing."
+    "notes": "Thrown from Connector to deep-burn inside Palace, breaking the T execute rush timing. Same lineup also works for Smoke, HE and (pop) flash."
+  },
+  {
+    "id": "ct-ramp-he",
+    "title": "Ramp HE",
+    "side": "ct",
+    "types": ["he","molotov"],
+    "priority": "main",
+    "throwType": "W + Jumpthrow",
+    "images": [
+      { "label": "Where to Stand", "src": "mirage/a_ramp_he_stand.jpg" },
+      { "label": "Where to Aim", "src": "mirage/a_ramp_he_aim.jpg" }
+    ],
+    "notes": "Thrown from Jungle to damage Ts coming out A ramp. Same lineup can also be used to molotov into ramp."
   },
   {
     "id": "ct-deep-b-apps-smoke",
