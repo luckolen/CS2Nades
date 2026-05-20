@@ -31,7 +31,7 @@
     "side": "t",
     "types": ["molotov"],
     "priority": "main",
-    "throwType": "Normal",
+    "throwType": "Jumpthrow",
     "images": [
       { "label": "Where to Stand", "src": "mirage/a_stairs_molotov_stand.jpg" },
       { "label": "Where to Aim", "src": "mirage/a_stairs_molotov_aim.jpg" }
@@ -109,25 +109,25 @@
     "side": "t",
     "types": ["molotov"],
     "priority": "situational",
-    "throwType": "Normal / Running drop",
+    "throwType": "Running throw",
     "images": [
       { "label": "Where to Stand", "src": "mirage/under_balcony_palace_stand.jpg" },
       { "label": "Where to Aim", "src": "mirage/under_balcony_palace_aim.jpg" }
     ],
-    "notes": "A quick running drop line down out of palace exit to burn anyone hiding right underneath."
+    "notes": "Run forward till the crosshair touches the light on the wall. A quick running drop line down out of palace exit to burn anyone hiding right underneath."
   },
   {
-    "id": "a-firebox-molotov",
-    "title": "A Firebox / Ninja Molotov",
+    "id": "a-triple-molotov",
+    "title": "A Triple / Ninja Molotov",
     "side": "t",
     "types": ["molotov"],
     "priority": "main",
-    "throwType": "Jumpthrow",
+    "throwType": "Normal",
     "images": [
-      { "label": "Where to Stand", "src": "mirage/firebox_molotov_stand.jpg" },
-      { "label": "Where to Aim", "src": "mirage/firebox_molotov_aim.jpg" }
+      { "label": "Where to Stand", "src": "mirage/triple_molotov_stand.jpg" },
+      { "label": "Where to Aim", "src": "mirage/triple_molotov_aim.jpg" }
     ],
-    "notes": "Mandatory execute lineup. Prevents entry fraggers from getting caught by crossfires behind triple/firebox."
+    "notes": "Mandatory execute lineup. Prevents entry fraggers from getting caught by crossfires behind triple."
   },
   {
     "id": "a-sandwich-molotov",
@@ -232,6 +232,19 @@
       { "label": "Zoom in", "src": "mirage/window_insta_5_zoom.jpg" }
     ],
     "notes": "Throw immediately at round start without moving from Spawn Location #5."
+  },  
+  {
+    "id": "mirage-window-top-mid",
+    "title": "Mid Window (from top mid)",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "situational",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "mirage/window_top_mid_stand.jpg" },
+      { "label": "Where to Aim", "src": "mirage/window_top_mid_aim.jpg" }
+    ],
+    "notes": "Allign using the bottom of palm tree with the horizonal line and vertical line with the antenna."
   },
   {
     "id": "mid-short-smoke",
@@ -306,8 +319,11 @@
     "priority": "main",
     "throwType": "Jumpthrow",
     "images": [
-      { "label": "Where to Stand", "src": "mirage/b_kitchen_window_stand.jpg" },
+      { "label": "Where to Stand", "src": "mirage/b_apps_stand.jpg" },
       { "label": "Where to Aim", "src": "mirage/b_kitchen_window_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom in", "src": "mirage/b_kitchen_window_zoom.jpg"}
     ],
     "notes": "Lands cleanly inside the kitchen/market window frame to shut down structural rotations."
   },
@@ -319,8 +335,11 @@
     "priority": "main",
     "throwType": "Jumpthrow",
     "images": [
-      { "label": "Where to Stand", "src": "mirage/b_kitchen_door_stand.jpg" },
+      { "label": "Where to Stand", "src": "mirage/b_apps_stand.jpg" },
       { "label": "Where to Aim", "src": "mirage/b_kitchen_door_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom in", "src": "mirage/b_kitchen_door_zoom.jpg" }
     ],
     "notes": "Blocks market door paths completely so rotators from CT have to push blind."
   },
