@@ -1,68 +1,140 @@
 [
   {
-    "id": "cache-ct-a-connector-smoke",
-    "title": "A Connector Smoke",
+    "id": "cache-ct-a-main-smoke",
+    "title": "A Main Smoke",
     "side": "ct",
     "types": ["smoke"],
     "priority": "main",
     "throwType": "Normal",
     "images": [
-      { "label": "Where to Stand", "src": "cache/a_connector_location.jpg" },
-      { "label": "Where to Aim", "src": "cache/a_connector_aim.jpg" }
+      { "label": "Where to Stand", "src": "cache/a_main_stand.jpg" },
+      { "label": "Where to Aim", "src": "cache/a_main_aim.jpg" }
     ],
-    "notes": "Essential defensive or retake utility. Completely seals off visual lines from Connector to stall T-splits and allow safe site containment or defuses."
+    "extraImages": [
+      { "label": "Zoom", "src": "cache/a_main_zoom.jpg" },
+      { "label": "Result", "src": "cache/a_main_result.jpg" }
+    ],
+    "notes": "Essential defensive or retake utility. Completely seals off visual lines from Main to stall T-splits and allow safe site containment or defuses."
   },
   {
     "id": "cache-t-a-waterfall",
-    "title": "A Waterfall",
+    "title": "A Waterfall Smoke",
     "side": "t",
     "types": ["smoke"],
     "priority": "main",
     "throwType": "Normal",
     "images": [
-      { "label": "Where to Aim", "src": "cache/a_waterfall_smoke_aim.jpg" },
-      { "label": "Zoom in", "src": "cache/a_waterfall_smoke_aim_zoom.jpg" }
+      { "label": "Where to Stand", "src": "cache/a_waterfall_smoke_stand.jpg" },
+      { "label": "Where to Aim", "src": "cache/a_waterfall_smoke_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "cache/a_waterfall_smoke_zoom.jpg" },
+      { "label": "Result", "src": "cache/a_waterfall_smoke_result.jpg" }
     ],
     "notes": "Blocks high background crossfires from the A-truck/waterfall platform. Alignment: Keep your 1x crosshair dot directly on the brown edge of the roof trim for a perfect bounce."
   },
   {
+    "id": "cache-t-mid-connector-smoke",
+    "title": "Mid Connector Smoke",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Shift walk jump",
+    "images": [
+      { "label": "Where to Stand", "src": "cache/mid_connector_stand.jpg" },
+      { "label": "Where to Aim", "src": "cache/mid_connector_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "cache/mid_connector_zoom.jpg" },
+      { "label": "Throw", "src": "cache/mid_connector_throw.jpg" },
+      { "label": "Result", "src": "cache/mid_connector_result.jpg" }
+    ],
+    "notes": "Crucial tool for taking central map control or running a Mid-to-A wrap. Execution: Shift-walk forward until your crosshair's -1y line reaches the bottom edge of the letter 'C' on the wall, then execute a jumpthrow."
+  },
+  {
+    "id": "cache-t-mid-criss-cross-left-smoke",
+    "title": "Mid Criss-Cross Left Smoke",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "cache/mid_criss_cross_left_stand.jpg" },
+      { "label": "Where to Aim", "src": "cache/mid_criss_cross_left_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "cache/mid_criss_cross_left_zoom.jpg" },
+      { "label": "Result", "src": "cache/mid_criss_cross_left_result.jpg" }
+    ],
+    "notes": "First half of the standard mid-lane tactical screen. Pairs with the Right smoke to completely blind white-box and highway lines, allowing your team to scale up mid safely."
+  },
+  {
+    "id": "cache-t-mid-criss-cross-right-smoke",
+    "title": "Mid Criss-Cross Right Smoke",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "cache/mid_criss_cross_right_stand.jpg" },
+      { "label": "Where to Aim", "src": "cache/mid_criss_cross_right_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "cache/mid_criss_cross_right_zoom.jpg" },
+      { "label": "Result", "src": "cache/mid_criss_cross_right_result.jpg" }
+    ],
+    "notes": "Second half of the tactical screen. Blinds garage and Z-connector visibility to guarantee safe transitions toward vents or highway split parameters."
+  },
+  {
     "id": "cache-t-b-ct-smoke",
-    "title": "B CT Smoke",
+    "title": "B CT Smoke (From Sunroom Pos 1)",
     "side": "t",
     "types": ["smoke"],
     "priority": "main",
     "throwType": "Left + Right + Jump",
     "images": [
-      { "label": "Where to Stand", "src": "cache/b_sunroom_location_1.jpg" },
+      { "label": "Where to Stand", "src": "cache/b_sunroom_stand_1.jpg" },
       { "label": "Where to Aim", "src": "cache/b_ct_smoke_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "cache/b_ct_smoke_zoom.jpg" },
+      { "label": "Result", "src": "cache/b_ct_smoke_result.jpg" }
     ],
     "notes": "Core B execute utility. Completely screens off the deep CT rotation hallway. Requires holding down both mouse buttons simultaneously before hitting your jumpthrow bind."
   },
   {
-    "id": "cache-t-b-headshot-molotov",
-    "title": "B Headshot Molotov",
-    "side": "t",
-    "types": ["molotov"],
-    "priority": "main",
-    "throwType": "Normal",
-    "images": [
-      { "label": "Where to Stand", "src": "cache/b_sunroom_location_2.jpg" },
-      { "label": "Where to Aim", "src": "cache/b_headshot_molotov_aim.jpg" }
-    ],
-    "notes": "Flushes out the most common close-site defensive anchor camping behind the Headshot box. Thrown safely from the second Sunroom pocket."
-  },
-  {
     "id": "cache-t-b-front-site-molotov",
-    "title": "B Front Site Molotov",
+    "title": "B Front Site Molotov (From Sunroom Pos 1)",
     "side": "t",
     "types": ["molotov", "flash"],
     "priority": "main",
     "throwType": "Normal",
     "images": [
-      { "label": "Where to Stand", "src": "cache/b_sunroom_location_1.jpg" },
+      { "label": "Where to Stand", "src": "cache/b_sunroom_stand_1.jpg" },
       { "label": "Where to Aim", "src": "cache/b_front_site_molotov_aim.jpg" }
     ],
+    "extraImages": [
+      { "label": "Zoom", "src": "cache/b_front_site_molotov_zoom.jpg" },
+      { "label": "Result", "src": "cache/b_front_site_molotov_result.jpg" }
+    ],
     "notes": "Dual-purpose utility lineup from Sunroom pocket #1. Spreads flames directly across front site configurations. If you immediately follow up with a flashbang using the exact same lineup, fleeing anchors will be caught completely blind."
+  },
+  {
+    "id": "cache-t-b-headshot-molotov",
+    "title": "B Headshot Molotov (From Sunroom Pos 2)",
+    "side": "t",
+    "types": ["molotov"],
+    "priority": "main",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "cache/b_sunroom_stand_2.jpg" },
+      { "label": "Where to Aim", "src": "cache/b_headshot_molotov_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "cache/b_headshot_molotov_zoom.jpg" },
+      { "label": "Result", "src": "cache/b_headshot_molotov_result.jpg" }
+    ],
+    "notes": "Flushes out the most common close-site defensive anchor camping behind the Headshot box. Thrown safely from the second Sunroom pocket."
   },
   {
     "id": "cache-t-b-heaven-smoke",
@@ -72,48 +144,13 @@
     "priority": "main",
     "throwType": "Normal",
     "images": [
-      { "label": "Where to Stand", "src": "cache/b_heaven_location.jpg" },
+      { "label": "Where to Stand", "src": "cache/b_heaven_stand.jpg" },
       { "label": "Where to Aim", "src": "cache/b_heaven_aim.jpg" }
     ],
+    "extraImages": [
+      { "label": "Zoom", "src": "cache/b_heaven_zoom.jpg" },
+      { "label": "Result", "src": "cache/b_heaven_result.jpg" }
+    ],
     "notes": "Blinds deep AWPers and rotators anchoring the B high-ground balcony. Alignment: Stand right in front of the circular dot on the green wall, and place your vertical crosshair axis cleanly along the wall seams."
-  },
-  {
-    "id": "cache-t-mid-connector-smoke",
-    "title": "Mid connector smoke",
-    "side": "t",
-    "types": ["smoke"],
-    "priority": "main",
-    "throwType": "Shift walk jump",
-    "images": [
-      { "label": "Where to Stand", "src": "cache/mid_connector_location.jpg" },
-      { "label": "Where to Aim", "src": "cache/mid_connector_aim.jpg" }
-    ],
-    "notes": "Crucial tool for taking central map control or running a Mid-to-A wrap. Execution: Shift-walk forward until your crosshair's -1y line reaches the bottom edge of the letter 'C' on the wall, then execute a jumpthrow."
-  },
-  {
-    "id": "cache-t-mid-criss-cross-left-smoke",
-    "title": "Mid Criss-Cross Left smoke",
-    "side": "t",
-    "types": ["smoke"],
-    "priority": "main",
-    "throwType": "Normal",
-    "images": [
-      { "label": "Where to Stand", "src": "cache/mid_criss_cross_left_location.jpg" },
-      { "label": "Where to Aim", "src": "cache/mid_criss_cross_left_aim.jpg" }
-    ],
-    "notes": "First half of the standard mid-lane tactical screen. Pairs with the Right smoke to completely blind white-box and highway lines, allowing your team to scale up mid safely."
-  },
-  {
-    "id": "cache-t-mid-criss-cross-right-smoke",
-    "title": "Mid Criss-Cross Right smoke",
-    "side": "t",
-    "types": ["smoke"],
-    "priority": "main",
-    "throwType": "Normal",
-    "images": [
-      { "label": "Where to Stand", "src": "cache/mid_criss_cross_right_location.jpg" },
-      { "label": "Where to Aim", "src": "cache/mid_criss_cross_right_aim.jpg" }
-    ],
-    "notes": "Second half of the tactical screen. Blinds garage and Z-connector visibility to guarantee safe transitions toward vents or highway split parameters."
   }
 ]
