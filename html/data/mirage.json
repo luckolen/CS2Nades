@@ -124,13 +124,13 @@
     "side": "t",
     "types": ["molotov"],
     "priority": "situational",
-    "throwType": "Running throw",
+    "throwType": "W + throw",
     "images": [
       { "label": "Where to Stand", "src": "mirage/under_balcony_palace_stand.jpg" },
       { "label": "Where to Aim", "src": "mirage/under_balcony_palace_aim.jpg" }
     ],
     "extraImages": [
-      { "label": "Zoom", "src": "mirage/under_balcony_palace_zoom.jpg" },
+      { "label": "Throw", "src": "mirage/under_balcony_palace_throw.jpg" },
       { "label": "Result", "src": "mirage/under_balcony_palace_result.jpg" }
     ],
     "notes": "Run forward until the crosshair touches the light on the wall. A quick running drop line down out of palace exit to burn anyone hiding right underneath."
@@ -310,7 +310,7 @@
     "side": "t",
     "types": ["smoke"],
     "priority": "main",
-    "throwType": "Jumpthrow",
+    "throwType": "Normal",
     "images": [
       { "label": "Where to Stand", "src": "mirage/b_apps_stand_1.jpg" },
       { "label": "Where to Aim", "src": "mirage/b_short_smoke_aim.jpg" }
@@ -378,7 +378,7 @@
     "side": "t",
     "types": ["flash"],
     "priority": "main",
-    "throwType": "Normal / Running",
+    "throwType": "Jumpthrow",
     "images": [
       { "label": "Where to Stand", "src": "mirage/b_apps_flash_stand.jpg" },
       { "label": "Where to Aim", "src": "mirage/b_apps_flash_aim.jpg" }
@@ -412,7 +412,7 @@
     "side": "ct",
     "types": ["flash"],
     "priority": "situational",
-    "throwType": "Normal",
+    "throwType": "Jumpthrow",
     "images": [
       { "label": "Where to Stand", "src": "mirage/ct_b_retake_flash_stand.jpg" },
       { "label": "Where to Aim", "src": "mirage/ct_b_retake_flash_aim.jpg" }
