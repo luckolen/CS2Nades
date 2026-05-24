@@ -1,19 +1,40 @@
 [
   {
-    "id": "a-ct-smoke",
-    "title": "A CT Smoke",
+    "id": "mirage-t-a-ct-smoke-ramp",
+    "title": "A CT Smoke (from ramp)",
     "side": "t",
     "types": ["smoke"],
     "priority": "main",
     "throwType": "Jumpthrow",
     "images": [
-      { "label": "Where to Stand", "src": "mirage/a_ct_smoke_stand.jpg" },
-      { "label": "Where to Aim", "src": "mirage/a_ct_smoke_aim.jpg" }
+      { "label": "Where to Stand", "src": "mirage/a_ct_smoke_ramp_stand.jpg" },
+      { "label": "Where to Aim", "src": "mirage/a_ct_smoke_ramp_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/a_ct_smoke_ramp_zoom.jpg" },
+      { "label": "Result", "src": "mirage/a_ct_smoke_ramp_result.jpg" }
     ],
     "notes": "Absolute default execute smoke. Blocks off the primary CT rotators and AWPers."
   },
   {
-    "id": "a-stairs-smoke",
+    "id": "mirage-t-a-ct-smoke-t",
+    "title": "A CT Smoke (from spawn)",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Jumpthrow",
+    "images": [
+      { "label": "Where to Stand", "src": "mirage/a_ct_smoke_t_stand.jpg" },
+      { "label": "Where to Aim", "src": "mirage/a_ct_smoke_t_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/a_ct_smoke_t_zoom.jpg" },
+      { "label": "Result", "src": "mirage/a_ct_smoke_t_result.jpg" }
+    ],
+    "notes": "Absolute default execute smoke. Blocks off the primary CT rotators and AWPers."
+  },
+  {
+    "id": "mirage-t-a-stairs-smoke",
     "title": "A Stairs Smoke",
     "side": "t",
     "types": ["smoke"],
@@ -23,10 +44,14 @@
       { "label": "Where to Stand", "src": "mirage/a_stairs_smoke_stand.jpg" },
       { "label": "Where to Aim", "src": "mirage/a_stairs_smoke_aim.jpg" }
     ],
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/a_stairs_smoke_zoom.jpg" },
+      { "label": "Result", "src": "mirage/a_stairs_smoke_result.jpg" }
+    ],
     "notes": "Lands perfectly on top of stairs. Combine with Jungle smoke to completely screen off top-site."
   },
   {
-    "id": "a-stairs-molotov",
+    "id": "mirage-t-a-stairs-molotov",
     "title": "A Stairs Molotov",
     "side": "t",
     "types": ["molotov"],
@@ -36,11 +61,15 @@
       { "label": "Where to Stand", "src": "mirage/a_stairs_molotov_stand.jpg" },
       { "label": "Where to Aim", "src": "mirage/a_stairs_molotov_aim.jpg" }
     ],
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/a_stairs_molotov_zoom.jpg" },
+      { "label": "Result", "src": "mirage/a_stairs_molotov_result.jpg" }
+    ],
     "notes": "Flushes out the standard rifle anchor playing close or on top of stairs."
   },
   {
-    "id": "a-connector-from-ramp",
-    "title": "A Connector (From Ramp)",
+    "id": "mirage-t-a-connector-from-ramp",
+    "title": "A Connector Smoke (From Ramp)",
     "side": "t",
     "types": ["smoke"],
     "priority": "main",
@@ -49,62 +78,48 @@
       { "label": "Where to Stand", "src": "mirage/connector_ramp_stand.jpg" },
       { "label": "Where to Aim", "src": "mirage/connector_ramp_aim.jpg" }
     ],
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/connector_ramp_zoom.jpg" },
+      { "label": "Result", "src": "mirage/connector_ramp_result.jpg" }
+    ],
     "notes": "Deep connector smoke thrown from the safety of A-ramp before executing."
   },
   {
-    "id": "a-connector-from-mid",
-    "title": "A Connector (From Top Mid)",
-    "side": "t",
-    "types": ["smoke"],
-    "priority": "situational",
-    "throwType": "Normal",
-    "images": [
-      { "label": "Where to Stand", "src": "mirage/connector_mid_stand.jpg" },
-      { "label": "Where to Aim", "src": "mirage/connector_mid_aim.jpg" }
-    ],
-    "notes": "Great for late-round mid splits to block off A rotators while grouping up top-mid."
-  },
-  {
-    "id": "a-jungle-from-ramp",
-    "title": "A Jungle (From Ramp)",
+    "id": "mirage-t-a-jungle-from-tetris",
+    "title": "A Jungle Smoke (From Tetris)",
     "side": "t",
     "types": ["smoke"],
     "priority": "main",
-    "throwType": "Jumpthrow",
-    "images": [
-      { "label": "Where to Stand", "src": "mirage/jungle_ramp_stand.jpg" },
-      { "label": "Where to Aim", "src": "mirage/jungle_ramp_aim.jpg" }
-    ],
-    "notes": "Leaves a tight visual screen when paired with Stairs smoke so cross-site is hidden."
-  },
-  {
-    "id": "a-jungle-from-mid",
-    "title": "A Jungle (From Top Mid)",
-    "side": "t",
-    "types": ["smoke"],
-    "priority": "situational",
     "throwType": "Normal",
     "images": [
-      { "label": "Where to Stand", "src": "mirage/jungle_mid_stand.jpg" },
-      { "label": "Where to Aim", "src": "mirage/jungle_mid_aim.jpg" }
+      { "label": "Where to Stand", "src": "mirage/a_tetris_stand.jpg" },
+      { "label": "Where to Aim", "src": "mirage/jungle_tetris_aim.jpg" }
     ],
-    "notes": "Blocks cross-lines to jungle when running a fast scale up through mid connector."
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/jungle_tetris_zoom.jpg" },
+      { "label": "Result", "src": "mirage/jungle_tetris_result.jpg" }
+    ],
+    "notes": "Standard execute screen thrown safely from Tetris blocks. Leaves a tight visual containment frame when paired up directly with a Stairs smoke setup."
   },
   {
-    "id": "a-under-balcony-from-ramp",
-    "title": "A Under Balcony Molotov (From Ramp)",
+    "id": "mirage-t-a-triple-molotov",
+    "title": "A Triple Molotov (From Tetris)",
     "side": "t",
     "types": ["molotov"],
-    "priority": "situational",
+    "priority": "main",
     "throwType": "Normal",
     "images": [
-      { "label": "Where to Stand", "src": "mirage/under_balcony_ramp_stand.jpg" },
-      { "label": "Where to Aim", "src": "mirage/under_balcony_ramp_aim.jpg" }
+      { "label": "Where to Stand", "src": "mirage/a_tetris_stand.jpg" },
+      { "label": "Where to Aim", "src": "mirage/triple_molotov_aim.jpg" }
     ],
-    "notes": "Clears close shadow/under-balcony safely from deep ramp lines."
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/triple_molotov_zoom.jpg" },
+      { "label": "Result", "src": "mirage/triple_molotov_result.jpg" }
+    ],
+    "notes": "Mandatory site entry utility. Thrown from the exact same Tetris pocket as the Jungle smoke to safely force anchors out into vulnerable crossfire lanes."
   },
   {
-    "id": "a-under-balcony-from-palace",
+    "id": "mirage-t-a-under-balcony-from-palace",
     "title": "A Under Balcony Molotov (From Palace)",
     "side": "t",
     "types": ["molotov"],
@@ -114,36 +129,14 @@
       { "label": "Where to Stand", "src": "mirage/under_balcony_palace_stand.jpg" },
       { "label": "Where to Aim", "src": "mirage/under_balcony_palace_aim.jpg" }
     ],
-    "notes": "Run forward till the crosshair touches the light on the wall. A quick running drop line down out of palace exit to burn anyone hiding right underneath."
-  },
-  {
-    "id": "a-triple-molotov",
-    "title": "A Triple / Ninja Molotov",
-    "side": "t",
-    "types": ["molotov"],
-    "priority": "main",
-    "throwType": "Normal",
-    "images": [
-      { "label": "Where to Stand", "src": "mirage/triple_molotov_stand.jpg" },
-      { "label": "Where to Aim", "src": "mirage/triple_molotov_aim.jpg" }
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/under_balcony_palace_zoom.jpg" },
+      { "label": "Result", "src": "mirage/under_balcony_palace_result.jpg" }
     ],
-    "notes": "Mandatory execute lineup. Prevents entry fraggers from getting caught by crossfires behind triple."
+    "notes": "Run forward until the crosshair touches the light on the wall. A quick running drop line down out of palace exit to burn anyone hiding right underneath."
   },
   {
-    "id": "a-sandwich-molotov",
-    "title": "A Sandwich Molotov",
-    "side": "t",
-    "types": ["molotov"],
-    "priority": "situational",
-    "throwType": "Normal",
-    "images": [
-      { "label": "Where to Stand", "src": "mirage/sandwich_molotov_stand.jpg" },
-      { "label": "Where to Aim", "src": "mirage/sandwich_molotov_aim.jpg" }
-    ],
-    "notes": "Safely thrown from ramp to burn out anyone holding tight angles under the stairs block."
-  },
-  {
-    "id": "a-ramp-support-flash",
+    "id": "mirage-t-a-ramp-support-flash",
     "title": "A Ramp Support Pop-Flash",
     "side": "t",
     "types": ["flash"],
@@ -153,237 +146,14 @@
       { "label": "Where to Stand", "src": "mirage/a_ramp_flash_stand.jpg" },
       { "label": "Where to Aim", "src": "mirage/a_ramp_flash_aim.jpg" }
     ],
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/a_ramp_flash_zoom.jpg" },
+      { "label": "Result", "src": "mirage/a_ramp_flash_result.jpg" }
+    ],
     "notes": "High pop-flash over the structures that blinds default site anchors without flashing entries running out."
   },
   {
-    "id": "mirage-window-standard",
-    "title": "Mid Window (Standard Backup)",
-    "side": "t",
-    "types": ["smoke"],
-    "priority": "main",
-    "throwType": "W + Jumpthrow",
-    "images": [
-      { "label": "Where to Stand", "src": "mirage/window_standard_stand.jpg" },
-      { "label": "Where to Aim", "src": "mirage/window_standard_aim.jpg" }
-    ],
-    "notes": "Use this backup lineup from T-Spawn trash can if you miss the instant window timing or get dropped utility."
-  },
-  {
-    "id": "mirage-window-insta-1",
-    "title": "Mid Window (Instant Spawn 1)",
-    "side": "t",
-    "types": ["smoke"],
-    "priority": "situational",
-    "throwType": "Jumpthrow",
-    "images": [
-      { "label": "Where to Aim", "src": "mirage/window_insta_1_aim.jpg" },
-      { "label": "Zoom in", "src": "mirage/window_insta_1_zoom.jpg" }
-    ],
-    "notes": "Throw immediately at round start without moving. Sequence order: bottom-left to right."
-  },
-  {
-    "id": "mirage-window-insta-2",
-    "title": "Mid Window (Instant Spawn 2)",
-    "side": "t",
-    "types": ["smoke"],
-    "priority": "situational",
-    "throwType": "Jumpthrow",
-    "images": [
-      { "label": "Where to Aim", "src": "mirage/window_insta_2_aim.jpg" },
-      { "label": "Zoom in", "src": "mirage/window_insta_2_zoom.jpg" }
-    ],
-    "notes": "Throw immediately at round start without moving from Spawn Location #2."
-  },
-  {
-    "id": "mirage-window-insta-3",
-    "title": "Mid Window (Instant Spawn 3)",
-    "side": "t",
-    "types": ["smoke"],
-    "priority": "situational",
-    "throwType": "Jumpthrow",
-    "images": [
-      { "label": "Where to Aim", "src": "mirage/window_insta_3_aim.jpg" },
-      { "label": "Zoom in", "src": "mirage/window_insta_3_zoom.jpg" }
-    ],
-    "notes": "Throw immediately at round start without moving from Spawn Location #3."
-  },
-  {
-    "id": "mirage-window-insta-4",
-    "title": "Mid Window (Instant Spawn 4)",
-    "side": "t",
-    "types": ["smoke"],
-    "priority": "situational",
-    "throwType": "Jumpthrow",
-    "images": [
-      { "label": "Where to Aim", "src": "mirage/window_insta_4_aim.jpg" },
-      { "label": "Zoom in", "src": "mirage/window_insta_4_zoom.jpg" }
-    ],
-    "notes": "Throw immediately at round start without moving from Spawn Location #4."
-  },
-  {
-    "id": "mirage-window-insta-5",
-    "title": "Mid Window (Instant Spawn 5)",
-    "side": "t",
-    "types": ["smoke"],
-    "priority": "situational",
-    "throwType": "Jumpthrow",
-    "images": [
-      { "label": "Where to Aim", "src": "mirage/window_insta_5_aim.jpg" },
-      { "label": "Zoom in", "src": "mirage/window_insta_5_zoom.jpg" }
-    ],
-    "notes": "Throw immediately at round start without moving from Spawn Location #5."
-  },
-  {
-    "id": "mirage-window-top-mid",
-    "title": "Mid Window (from top mid)",
-    "side": "t",
-    "types": ["smoke"],
-    "priority": "situational",
-    "throwType": "Normal",
-    "images": [
-      { "label": "Where to Stand", "src": "mirage/window_top_mid_stand.jpg" },
-      { "label": "Where to Aim", "src": "mirage/window_top_mid_aim.jpg" }
-    ],
-    "notes": "Allign using the bottom of palm tree with the horizonal line and vertical line with the antenna."
-  },
-  {
-    "id": "mid-short-smoke",
-    "title": "Mid Short Smoke",
-    "side": "t",
-    "types": ["smoke"],
-    "priority": "main",
-    "throwType": "Normal",
-    "images": [
-      { "label": "Where to Stand", "src": "mirage/mid_short_smoke_stand.jpg" },
-      { "label": "Where to Aim", "src": "mirage/mid_short_smoke_aim.jpg" }
-    ],
-    "notes": "Completely seals off Catwalk sightlines to let your squad cross to deep mid safely."
-  },
-  {
-    "id": "mid-top-smoke",
-    "title": "Mid Top Smoke",
-    "side": "t",
-    "types": ["smoke"],
-    "priority": "main",
-    "throwType": "Normal",
-    "images": [
-      { "label": "Where to Stand", "src": "mirage/mid_top_smoke_stand.jpg" },
-      { "label": "Where to Aim", "src": "mirage/mid_top_smoke_aim.jpg" }
-    ],
-    "notes": "Cuts off initial cross peeks from window or short for teams scaling up top mid lines."
-  },
-  {
-    "id": "mid-connector-smoke",
-    "title": "Mid Connector Smoke",
-    "side": "t",
-    "types": ["smoke"],
-    "priority": "main",
-    "throwType": "Jumpthrow",
-    "images": [
-      { "label": "Where to Stand", "src": "mirage/mid_connector_smoke_stand.jpg" },
-      { "label": "Where to Aim", "src": "mirage/mid_connector_smoke_aim.jpg" }
-    ],
-    "notes": "Seals off connector depth to separate A site info from central mid containment."
-  },
-  {
-    "id": "underpass-utility",
-    "title": "Underpass Molotov / Flash",
-    "side": "t",
-    "types": ["molotov", "flash"],
-    "priority": "situational",
-    "throwType": "Normal Underhand / Left Click",
-    "images": [
-      { "label": "Where to Stand", "src": "mirage/underpass_utility_stand.jpg" },
-      { "label": "Where to Aim", "src": "mirage/underpass_utility_aim.jpg" }
-    ],
-    "notes": "Forces out aggressive close anchors looking down from short/connector drop boundaries."
-  },
-  {
-    "id": "b-short-smoke",
-    "title": "B Short Smoke",
-    "side": "t",
-    "types": ["smoke"],
-    "priority": "main",
-    "throwType": "Jumpthrow",
-    "images": [
-      { "label": "Where to Stand", "src": "mirage/b_short_smoke_stand.jpg" },
-      { "label": "Where to Aim", "src": "mirage/b_short_smoke_aim.jpg" }
-    ],
-    "notes": "Standard B execute piece. Blocks lines from catwalk arches into the back apartments exit."
-  },
-  {
-    "id": "b-kitchen-window-smoke",
-    "title": "B Kitchen Window Smoke",
-    "side": "t",
-    "types": ["smoke"],
-    "priority": "main",
-    "throwType": "Jumpthrow",
-    "images": [
-      { "label": "Where to Stand", "src": "mirage/b_apps_stand.jpg" },
-      { "label": "Where to Aim", "src": "mirage/b_kitchen_window_aim.jpg" }
-    ],
-    "extraImages": [
-      { "label": "Zoom in", "src": "mirage/b_kitchen_window_zoom.jpg"}
-    ],
-    "notes": "Lands cleanly inside the kitchen/market window frame to shut down structural rotations."
-  },
-  {
-    "id": "b-kitchen-door-smoke",
-    "title": "B Kitchen Door Smoke",
-    "side": "t",
-    "types": ["smoke"],
-    "priority": "main",
-    "throwType": "Jumpthrow",
-    "images": [
-      { "label": "Where to Stand", "src": "mirage/b_apps_stand.jpg" },
-      { "label": "Where to Aim", "src": "mirage/b_kitchen_door_aim.jpg" }
-    ],
-    "extraImages": [
-      { "label": "Zoom in", "src": "mirage/b_kitchen_door_zoom.jpg" }
-    ],
-    "notes": "Blocks market door paths completely so rotators from CT have to push blind."
-  },
-  {
-    "id": "b-bench-molotov",
-    "title": "B Bench Molotov",
-    "side": "t",
-    "types": ["molotov"],
-    "priority": "main",
-    "throwType": "Normal",
-    "images": [
-      { "label": "Where to Stand", "src": "mirage/b_bench_molotov_stand.jpg" },
-      { "label": "Where to Aim", "src": "mirage/b_bench_molotov_aim.jpg" }
-    ],
-    "notes": "Crucial for B-Apps executions to flush out hidden anchors or close setup AWPers."
-  },
-  {
-    "id": "b-van-molotov",
-    "title": "B Van / Car Molotov",
-    "side": "t",
-    "types": ["molotov"],
-    "priority": "situational",
-    "throwType": "Normal",
-    "images": [
-      { "label": "Where to Stand", "src": "mirage/b_van_molotov_stand.jpg" },
-      { "label": "Where to Aim", "src": "mirage/b_van_molotov_aim.jpg" }
-    ],
-    "notes": "Clears jumpscouts or heavy close-site defensive layers camping car lines."
-  },
-  {
-    "id": "b-apps-pop-flash",
-    "title": "B Apartments Pop-Flash",
-    "side": "t",
-    "types": ["flash"],
-    "priority": "main",
-    "throwType": "Normal / Running",
-    "images": [
-      { "label": "Where to Stand", "src": "mirage/b_apps_flash_stand.jpg" },
-      { "label": "Where to Aim", "src": "mirage/b_apps_flash_aim.jpg" }
-    ],
-    "notes": "Throw through the kitchen roof grates or window openings to blind site anchors during entry jumps."
-  },
-  {
-    "id": "ct-deep-ramp-smoke",
+    "id": "mirage-ct-deep-ramp-smoke",
     "title": "Instant Deep Ramp Smoke",
     "side": "ct",
     "types": ["smoke"],
@@ -393,36 +163,234 @@
       { "label": "Where to Stand", "src": "mirage/ct_ramp_smoke_stand.jpg" },
       { "label": "Where to Aim", "src": "mirage/ct_ramp_smoke_aim.jpg" }
     ],
-    "notes": "Thrown instantly from specific CT spawn tiles to bloom at the ramp entrance before Ts entry."
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/ct_ramp_smoke_zoom.jpg" },
+      { "label": "Result", "src": "mirage/ct_ramp_smoke_result.jpg" }
+    ],
+    "notes": "Thrown instantly from CT spawn to bloom at the ramp entrance."
   },
   {
-    "id": "ct-palace-molotov",
-    "title": "Palace God-Molotov",
+    "id": "mirage-ct-palace-god-utility",
+    "title": "Palace God-Utility (From Connector)",
     "side": "ct",
-    "types": ["molotov","he", "smoke", "flash"],
+    "types": ["molotov", "he", "smoke", "flash"],
     "priority": "main",
-    "throwType": "Normal",
+    "throwType": "W + Throw",
     "images": [
       { "label": "Where to Stand", "src": "mirage/ct_palace_molotov_stand.jpg" },
       { "label": "Where to Aim", "src": "mirage/ct_palace_molotov_aim.jpg" }
     ],
-    "notes": "Thrown from Connector to deep-burn inside Palace, breaking the T execute rush timing. Same lineup also works for Smoke, HE and (pop) flash."
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/ct_palace_molotov_zoom.jpg" },
+      { "label": "Result", "src": "mirage/ct_palace_molotov_result.jpg" }
+    ],
+    "notes": "Essential round-start timing delay piece. Run forward using your W-key before releasing to land utility deep inside Palace structure. Works for Molotov, HE, Smoke, and Pop-flashes."
   },
   {
-    "id": "ct-ramp-he",
-    "title": "Ramp HE",
+    "id": "mirage-ct-ramp-he-molotov",
+    "title": "Ramp HE / Containment Molotov",
     "side": "ct",
-    "types": ["he","molotov"],
+    "types": ["he", "molotov"],
     "priority": "main",
     "throwType": "W + Jumpthrow",
     "images": [
       { "label": "Where to Stand", "src": "mirage/a_ramp_he_stand.jpg" },
       { "label": "Where to Aim", "src": "mirage/a_ramp_he_aim.jpg" }
     ],
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/a_ramp_he_zoom.jpg" },
+      { "label": "Result", "src": "mirage/a_ramp_he_result.jpg" }
+    ],
     "notes": "Thrown from Jungle to damage Ts coming out A ramp. Same lineup can also be used to molotov into ramp."
   },
   {
-    "id": "ct-deep-b-apps-smoke",
+    "id": "mirage-t-a-connector-from-mid",
+    "title": "A Connector Smoke (From Top Mid Boxes)",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "situational",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "mirage/mid_boxes_stand_1.jpg" },
+      { "label": "Where to Aim", "src": "mirage/connector_mid_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/connector_mid_zoom.jpg" },
+      { "label": "Result", "src": "mirage/connector_mid_result.jpg" }
+    ],
+    "notes": "Late-round mid execution tool thrown from the main pocket directly behind Top Mid boxes. Completely blinds A-site crossfires."
+  },
+  {
+    "id": "mirage-t-a-jungle-from-mid",
+    "title": "A Jungle Smoke (From Top Mid Boxes)",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "situational",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "mirage/mid_boxes_stand_1.jpg" },
+      { "label": "Where to Aim", "src": "mirage/jungle_mid_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/jungle_mid_zoom.jpg" },
+      { "label": "Result", "src": "mirage/jungle_mid_result.jpg" }
+    ],
+    "notes": "Fires directly from the main pocket behind Top Mid boxes. Seals structural sightlines to Jungle to shield teammates wrapping up through Connector."
+  },
+  {
+    "id": "mirage-t-mid-window-top-mid",
+    "title": "Mid Window Smoke (From Top Mid Boxes)",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "situational",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "mirage/mid_boxes_stand_1.jpg" },
+      { "label": "Where to Aim", "src": "mirage/window_top_mid_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Result", "src": "mirage/window_top_mid_result.jpg" }
+    ],
+    "notes": "Thrown from the main pocket behind Top Mid boxes. Align using the bottom of the palm tree with the horizontal crosshair line, and the vertical line with the antenna."
+  },
+  {
+    "id": "mirage-t-mid-short-smoke",
+    "title": "Mid Short Smoke (From Top Mid Boxes)",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "mirage/mid_boxes_stand_2.jpg" },
+      { "label": "Where to Aim", "src": "mirage/mid_short_smoke_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/mid_short_smoke_zoom.jpg" },
+      { "label": "Result", "src": "mirage/mid_short_smoke_result.jpg" }
+    ],
+    "notes": "Utilizes a distinct secondary standing spot behind the Top Mid boxes. Completely seals off Catwalk sightlines to let your squad cross to deep mid safely."
+  },
+  {
+    "id": "mirage-t-mid-top-smoke",
+    "title": "Mid Top Smoke",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "mirage/mid_top_smoke_stand.jpg" },
+      { "label": "Where to Aim", "src": "mirage/mid_top_smoke_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/mid_top_smoke_zoom.jpg" },
+      { "label": "Result", "src": "mirage/mid_top_smoke_result.jpg" }
+    ],
+    "notes": "Cuts off initial cross peeks from window or short for teams scaling up top mid lines."
+  },
+  {
+    "id": "mirage-t-mid-connector-smoke",
+    "title": "Mid Connector Smoke",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Jumpthrow",
+    "images": [
+      { "label": "Where to Stand", "src": "mirage/mid_connector_smoke_stand.jpg" },
+      { "label": "Where to Aim", "src": "mirage/mid_connector_smoke_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/mid_connector_smoke_zoom.jpg" },
+      { "label": "Result", "src": "mirage/mid_connector_smoke_result.jpg" }
+    ],
+    "notes": "Seals off connector depth to separate A site info from central mid containment."
+  },
+  {
+    "id": "mirage-t-b-short-smoke",
+    "title": "B Short Smoke (From Apartments)",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Jumpthrow",
+    "images": [
+      { "label": "Where to Stand", "src": "mirage/b_apps_stand_1.jpg" },
+      { "label": "Where to Aim", "src": "mirage/b_short_smoke_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/b_short_smoke_zoom.jpg" },
+      { "label": "Result", "src": "mirage/b_short_smoke_result.jpg" }
+    ],
+    "notes": "Core B execution utility thrown from the unified B Apartments setup location. Blocks lines from catwalk arches into the back apartments exit."
+  },
+  {
+    "id": "mirage-t-b-kitchen-window-smoke",
+    "title": "B Kitchen Window Smoke (From Apartments)",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Jumpthrow",
+    "images": [
+      { "label": "Where to Stand", "src": "mirage/b_apps_stand_1.jpg" },
+      { "label": "Where to Aim", "src": "mirage/b_kitchen_window_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/b_kitchen_window_zoom.jpg" },
+      { "label": "Result", "src": "mirage/b_kitchen_window_result.jpg" }
+    ],
+    "notes": "Fires directly from the shared B Apartments setup point. Lands cleanly inside the kitchen/market window frame to shut down structural rotations."
+  },
+  {
+    "id": "mirage-t-b-kitchen-door-smoke",
+    "title": "B Kitchen Door Smoke (From Apartments)",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Jumpthrow",
+    "images": [
+      { "label": "Where to Stand", "src": "mirage/b_apps_stand_1.jpg" },
+      { "label": "Where to Aim", "src": "mirage/b_kitchen_door_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/b_kitchen_door_zoom.jpg" },
+      { "label": "Result", "src": "mirage/b_kitchen_door_result.jpg" }
+    ],
+    "notes": "Fires directly from the shared B Apartments setup point. Blocks market door paths completely so rotators from CT have to push blind."
+  },
+  {
+    "id": "mirage-t-b-apps-window-flash",
+    "title": "B Apartments Window Flash",
+    "side": "t",
+    "types": ["flash"],
+    "priority": "main",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "mirage/b_apps_window_flash_stand.jpg" },
+      { "label": "Where to Aim", "src": "mirage/b_apps_window_flash_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/b_apps_window_flash_zoom.jpg" },
+      { "label": "Result", "src": "mirage/b_apps_window_flash_result.jpg" }
+    ],
+    "notes": "Tactical flash thrown completely out of the B apartments window frame to instantly blind aggressive van, car, and short balcony players holding deep entry sightlines."
+  },
+  {
+    "id": "mirage-t-b-apps-pop-flash",
+    "title": "B Apartments Pop-Flash (Over Roof)",
+    "side": "t",
+    "types": ["flash"],
+    "priority": "main",
+    "throwType": "Normal / Running",
+    "images": [
+      { "label": "Where to Stand", "src": "mirage/b_apps_flash_stand.jpg" },
+      { "label": "Where to Aim", "src": "mirage/b_apps_flash_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/b_apps_flash_zoom.jpg" },
+      { "label": "Result", "src": "mirage/b_apps_flash_result.jpg" }
+    ],
+    "notes": "Thrown high directly over the B apartments rooftop structures. Blind site anchors flawlessly during entry jumps without flashing incoming T rushing forces."
+  },
+  {
+    "id": "mirage-ct-deep-b-apps-smoke",
     "title": "Deep B-Apartments Smoke",
     "side": "ct",
     "types": ["smoke"],
@@ -432,23 +400,14 @@
       { "label": "Where to Stand", "src": "mirage/ct_b_apps_stand.jpg" },
       { "label": "Where to Aim", "src": "mirage/ct_b_apps_aim.jpg" }
     ],
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/ct_b_apps_zoom.jpg" },
+      { "label": "Result", "src": "mirage/ct_b_apps_result.jpg" }
+    ],
     "notes": "Locks down the apartments hallway from market/catwalk early entries to stop B contact pushes."
   },
   {
-    "id": "ct-a-retake-flash",
-    "title": "A-Site Retake Pop-Flashes",
-    "side": "ct",
-    "types": ["flash"],
-    "priority": "situational",
-    "throwType": "Normal",
-    "images": [
-      { "label": "Where to Stand", "src": "mirage/ct_a_retake_flash_stand.jpg" },
-      { "label": "Where to Aim", "src": "mirage/ct_a_retake_flash_aim.jpg" }
-    ],
-    "notes": "Bounces off the back structures to blind Ts occupying site without flashing retakers in connector."
-  },
-  {
-    "id": "ct-b-retake-flash",
+    "id": "mirage-ct-b-retake-flash",
     "title": "B-Site Retake Flash (Over Kitchen)",
     "side": "ct",
     "types": ["flash"],
@@ -458,6 +417,112 @@
       { "label": "Where to Stand", "src": "mirage/ct_b_retake_flash_stand.jpg" },
       { "label": "Where to Aim", "src": "mirage/ct_b_retake_flash_aim.jpg" }
     ],
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/ct_b_retake_flash_zoom.jpg" },
+      { "label": "Result", "src": "mirage/ct_b_retake_flash_result.jpg" }
+    ],
     "notes": "Bounces off market roof profiles to blind standard post-plant layouts playing behind van or bench."
+  },
+  {
+    "id": "mirage-t-mid-window-standard",
+    "title": "Mid Window Smoke (Standard Backup)",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "D + Jumpthrow",
+    "images": [
+      { "label": "Where to Stand", "src": "mirage/window_standard_stand.jpg" },
+      { "label": "Where to Aim", "src": "mirage/window_standard_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/window_standard_zoom.jpg" },
+      { "label": "Result", "src": "mirage/window_standard_result.jpg" }
+    ],
+    "notes": "Use this backup lineup from T-Spawn trash can if you miss the instant window timing or get dropped utility."
+  },
+  {
+    "id": "mirage-t-mid-window-insta-1",
+    "title": "Mid Window Smoke (Instant Spawn 1)",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "situational",
+    "throwType": "Jumpthrow",
+    "images": [
+      { "label": "Spawns", "src": "mirage/mirage_insta_locations.png" },
+      { "label": "Where to Aim", "src": "mirage/window_insta_1_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/window_insta_1_zoom.jpg" },
+      { "label": "Result", "src": "mirage/window_insta_1_result.jpg" }
+    ],
+    "notes": "Throw immediately at round start without moving from Spawn Position #1. Crosshair alignment sequence runs from right to left."
+  },
+  {
+    "id": "mirage-t-mid-window-insta-2",
+    "title": "Mid Window Smoke (Instant Spawn 2)",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "situational",
+    "throwType": "Jumpthrow",
+    "images": [
+      { "label": "Spawns", "src": "mirage/mirage_insta_locations.png" },
+      { "label": "Where to Aim", "src": "mirage/window_insta_2_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/window_insta_2_zoom.jpg" },
+      { "label": "Result", "src": "mirage/window_insta_2_result.jpg" }
+    ],
+    "notes": "Throw immediately at round start without moving from Spawn Location #2."
+  },
+  {
+    "id": "mirage-t-mid-window-insta-3",
+    "title": "Mid Window Smoke (Instant Spawn 3)",
+    "side": "t",
+                "types": ["smoke"],
+    "priority": "situational",
+    "throwType": "Jumpthrow",
+    "images": [
+      { "label": "Spawns", "src": "mirage/mirage_insta_locations.png" },
+      { "label": "Where to Aim", "src": "mirage/window_insta_3_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/window_insta_3_zoom.jpg" },
+      { "label": "Result", "src": "mirage/window_insta_3_result.jpg" }
+    ],
+    "notes": "Throw immediately at round start without moving from Spawn Location #3."
+  },
+  {
+    "id": "mirage-t-mid-window-insta-4",
+    "title": "Mid Window Smoke (Instant Spawn 4)",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "situational",
+    "throwType": "Jumpthrow",
+    "images": [
+      { "label": "Spawns", "src": "mirage/mirage_insta_locations.png" },
+      { "label": "Where to Aim", "src": "mirage/window_insta_4_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/window_insta_4_zoom.jpg" },
+      { "label": "Result", "src": "mirage/window_insta_4_result.jpg" }
+    ],
+    "notes": "Throw immediately at round start without moving from Spawn Location #4."
+  },
+  {
+    "id": "mirage-t-mid-window-insta-5",
+    "title": "Mid Window Smoke (Instant Spawn 5)",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "situational",
+    "throwType": "Jumpthrow",
+    "images": [
+      { "label": "Spawns", "src": "mirage/mirage_insta_locations.png" },
+      { "label": "Where to Aim", "src": "mirage/window_insta_5_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "mirage/window_insta_5_zoom.jpg" },
+      { "label": "Result", "src": "mirage/window_insta_5_result.jpg" }
+    ],
+    "notes": "Throw immediately at round start without moving from Spawn Location #5."
   }
 ]
