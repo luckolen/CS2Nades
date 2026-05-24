@@ -1,16 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
     const gridContainer = document.getElementById('utility-grid');
-    
+    let cachedGrenadesData = []; // Global data cache for lightbox slide calculations
+
     // --- 1. CONFIGURATION & MAP VALIDATION ENGINE ---
     if (gridContainer) {
         const urlParams = new URLSearchParams(window.location.search);
         const mapName = urlParams.get('map');
-        
+
         if (!mapName) {
             window.location.href = '../404.html';
             return;
         }
-        
+
         const titleElement = document.getElementById('map-title');
         if (titleElement) {
             titleElement.textContent = `DE_${mapName.toUpperCase()}`;
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .then(grenadesData => {
                 if (!grenadesData) return;
+                cachedGrenadesData = grenadesData; // Cache data natively
                 renderGrenadeCards(grenadesData);
                 initializeFilterEngine();
                 initializeLightboxEngine();
@@ -36,20 +38,20 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     }
 
-    // --- 2. TEMPLATE GENERATOR (UPDATED TO APPEND MEDIA PATH) ---
+    // --- 2. TEMPLATE GENERATOR ---
     function renderGrenadeCards(data) {
-        gridContainer.innerHTML = ''; 
+        gridContainer.innerHTML = '';
 
         data.forEach(nade => {
             const typeBadgesHTML = nade.types
                 .map(type => `<span class="type-badge ${type}">${type}</span>`)
                 .join('');
 
-            const priorityBadgeHTML = nade.priority === 'main' 
-                ? `<span class="type-badge" style="background: rgba(241, 196, 15, 0.1); color: #f1c40f; border: 1px solid rgba(241, 196, 15, 0.25);">⭐️</span>` 
+            const priorityBadgeHTML = nade.priority === 'main'
+                ? `<span class="type-badge" style="background: rgba(241, 196, 15, 0.1); color: #f1c40f; border: 1px solid rgba(241, 196, 15, 0.25);">⭐️</span>`
                 : '';
 
-            // Appends the absolute project path parent directory structure automatically
+            // Render only primary images here to maintain clean card density
             const imagesHTML = nade.images
                 .map(img => `
                     <div class="img-box">
@@ -130,39 +132,77 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // --- 4. LIGHTBOX MECHANICS (CENTER SCALE ZOOM) ---
+    // --- 4. LIGHTBOX ENGINE (FULL SCROLLABLE STREAM) ---
     function initializeLightboxEngine() {
         const lightbox = document.createElement('div');
         lightbox.className = 'lightbox';
         
-        const lightboxImg = document.createElement('img');
-        lightbox.appendChild(lightboxImg);
+        // This structural layout allows the window layer itself to scroll naturally
+        lightbox.style.overflowY = 'auto';
+
+        const streamWrapper = document.createElement('div');
+        streamWrapper.className = 'lightbox-stream-wrapper';
+        
+        lightbox.appendChild(streamWrapper);
         document.body.appendChild(lightbox);
 
+        // Card Click Event Interceptor
         gridContainer.addEventListener('click', (e) => {
             const clickedImg = e.target.closest('.img-box img');
             if (!clickedImg) return;
 
-            lightboxImg.src = clickedImg.src;
-            lightboxImg.alt = clickedImg.alt;
+            const targetCard = clickedImg.closest('.grenade-card');
+            if (!targetCard) return;
 
-            const labelText = clickedImg.previousElementSibling?.textContent.toLowerCase() || '';
-            const isAim = labelText.includes('aim') || labelText.includes('zoom') || clickedImg.src.toLowerCase().includes('aim');
+            // Fetch structural source data from global cache array
+            const record = cachedGrenadesData.find(n => n.id === targetCard.id);
+            if (!record) return;
 
-            if (isAim) {
-                lightbox.classList.add('zoomed-mode');
-            } else {
-                lightbox.classList.remove('zoomed-mode');
-            }
+            // Merge primary and extra data blocks seamlessly into one unified array
+            const allImages = [...record.images, ...(record.extraImages || [])];
             
+            streamWrapper.innerHTML = ''; // Wipe stale image pipelines
+
+            // Generate vertical stack sequence dynamically
+            allImages.forEach(item => {
+                const imgContainer = document.createElement('div');
+                imgContainer.className = 'lightbox-item-container';
+
+                const labelElement = document.createElement('div');
+                labelElement.className = 'lightbox-stream-label';
+                labelElement.textContent = item.label;
+
+                const imgElement = document.createElement('img');
+                imgElement.src = `../media/${item.src}`;
+                imgElement.alt = item.label;
+
+                imgContainer.appendChild(labelElement);
+                imgContainer.appendChild(imgElement);
+                streamWrapper.appendChild(imgContainer);
+            });
+
             lightbox.classList.add('active');
             document.body.style.overflow = 'hidden';
+            lightbox.scrollTop = 0; // Always snap the scroll container back to the top target
         });
 
-        lightbox.addEventListener('click', () => {
+        function closeLightbox() {
             lightbox.classList.remove('active');
-            lightbox.classList.remove('zoomed-mode');
             document.body.style.overflow = '';
+        }
+
+        // Close when clicking the dark backdrop space instead of the card content blocks
+        lightbox.addEventListener('click', (e) => {
+            if (!e.target.closest('.lightbox-item-container')) {
+                closeLightbox();
+            }
+        });
+
+        // Close on Escape route key intercept
+        document.addEventListener('keydown', (e) => {
+            if (lightbox.classList.contains('active') && e.key === 'Escape') {
+                closeLightbox();
+            }
         });
     }
 
@@ -191,7 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         setTimeout(() => title.classList.remove('clicked-flash'), 800);
                     }
                 }
-            }, 250); 
+            }, 250);
         }
     }
 });

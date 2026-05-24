@@ -206,10 +206,29 @@ h1 {
     margin-bottom: 15px;
 }
 
+/* Container holding Side, Badges, and Title text */
 .title-group {
     display: flex;
-    align-items: center;
-    gap: 12px;
+    flex-wrap: wrap;       /* Allows elements to drop down instead of pushing wide */
+    align-items: center;   /* Keeps badges and text vertically aligned when single-line */
+    gap: 8px 12px;         /* Distinct row/column spacing (8px gap if wrapped, 12px if row) */
+    width: 100%;
+    max-width: 100%;       /* Hard limit against breaking out of the card frame */
+}
+
+/* Force the badge wrappers to stay grouped if desired, or let them flow naturally */
+.title-group .type-badge,
+.title-group .side-badge {
+    flex-shrink: 0;        /* Prevents the text inside badges from getting squished */
+}
+
+/* The Title Text Component */
+.title-group .grenade-title {
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.4;
+    flex: 1 1 auto;        /* Allows text to take remaining space or scale out dynamically */
+    min-width: 200px;      /* The breaking point: if text has less than 200px, it drops down */
 }
 
 .grenade-title { 
@@ -342,39 +361,59 @@ h1 {
 /* ==========================================================================
    7. LIGHTBOX OVERLAY & SCALE ZOOM ENGINE
    ========================================================================== */
+/* Lightbox Container */
 .lightbox {
-    display: none;
     position: fixed;
-    z-index: 9999;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(10, 11, 16, 0.97);
-    padding: 20px;
-    box-sizing: border-box;
-    overflow: hidden; /* Lock viewport clipping while processing scaled zooms */
+    width: 100vw;
+    height: 100vh;
+    background: rgba(10, 10, 12, 0.96);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 2000;
 }
-
-/* Perfect Flexbox positioning layer */
 .lightbox.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Centered content stream wrapper */
+.lightbox-stream-wrapper {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
 }
 
-.lightbox img {
-    max-width: 90%;
-    max-height: 90vh;
-    object-fit: contain;
+/* Item block container */
+.lightbox-item-container {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Labels placed above the images */
+.lightbox-stream-label {
+    color: #f1c40f;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* The magic bullet: Natural width-scaling with absolute zero cropping */
+.lightbox-item-container img {
+    width: 100%;
+    height: auto; /* Ensures aspect ratio rules shape height automatically */
+    display: block;
     border-radius: 6px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
-    border: 1px solid var(--border-color);
-    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Hardware-accelerated 150% scale targeting the pixel center directly */
-.lightbox.zoomed-mode img {
-    transform: scale(1.5);
-    cursor: zoom-out;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
 }
