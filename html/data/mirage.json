@@ -446,7 +446,7 @@
     "side": "t",
     "types": ["smoke"],
     "priority": "situational",
-    "throwType": "Jumpthrow",
+    "throwType": "W + Jumpthrow",
     "images": [
       { "label": "Spawns", "src": "mirage/mirage_insta_locations.png" },
       { "label": "Where to Aim", "src": "mirage/window_insta_1_aim.jpg" }
@@ -463,7 +463,7 @@
     "side": "t",
     "types": ["smoke"],
     "priority": "situational",
-    "throwType": "Jumpthrow",
+    "throwType": "W + Jumpthrow",
     "images": [
       { "label": "Spawns", "src": "mirage/mirage_insta_locations.png" },
       { "label": "Where to Aim", "src": "mirage/window_insta_2_aim.jpg" }
@@ -478,9 +478,9 @@
     "id": "mirage-t-mid-window-insta-3",
     "title": "Mid Window Smoke (Instant Spawn 3)",
     "side": "t",
-                "types": ["smoke"],
+    "types": ["smoke"],
     "priority": "situational",
-    "throwType": "Jumpthrow",
+    "throwType": "W + Jumpthrow",
     "images": [
       { "label": "Spawns", "src": "mirage/mirage_insta_locations.png" },
       { "label": "Where to Aim", "src": "mirage/window_insta_3_aim.jpg" }
@@ -497,7 +497,7 @@
     "side": "t",
     "types": ["smoke"],
     "priority": "situational",
-    "throwType": "Jumpthrow",
+    "throwType": "W + Jumpthrow",
     "images": [
       { "label": "Spawns", "src": "mirage/mirage_insta_locations.png" },
       { "label": "Where to Aim", "src": "mirage/window_insta_4_aim.jpg" }
@@ -514,7 +514,7 @@
     "side": "t",
     "types": ["smoke"],
     "priority": "situational",
-    "throwType": "Jumpthrow",
+    "throwType": "W + Jumpthrow",
     "images": [
       { "label": "Spawns", "src": "mirage/mirage_insta_locations.png" },
       { "label": "Where to Aim", "src": "mirage/window_insta_5_aim.jpg" }
