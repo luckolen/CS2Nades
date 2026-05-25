@@ -1,67 +1,257 @@
 [
   {
-    "id": "inferno-b-ct-smoke",
-    "title": "B Site CT Boost Smoke",
-    "side": "t",
-    "types": ["smoke"],
-    "priority": "main",
-    "throwType": "Jumpthrow",
-    "images": [
-      { "label": "Where to Stand", "src": "inferno/b_ct_smoke_stand.jpg" },
-      { "label": "Where to Aim", "src": "inferno/b_ct_smoke_aim.jpg" }
-    ],
-    "notes": "Essential B execute utility piece. Completely blooms off the CT rotator alleyway and boost shelf."
-  },
-  {
-    "id": "inferno-b-coffins-smoke",
-    "title": "B Site Coffins Smoke",
+    "id": "inferno-t-a-arch-smoke-mid",
+    "title": "A Arch Smoke (From Mid)",
     "side": "t",
     "types": ["smoke"],
     "priority": "main",
     "throwType": "Normal",
     "images": [
-      { "label": "Where to Stand", "src": "inferno/coffins_smoke_stand.jpg" },
-      { "label": "Where to Aim", "src": "inferno/coffins_smoke_aim.jpg" }
+      { "label": "Where to Stand", "src": "inferno/a_arch_mid_stand.jpg" },
+      { "label": "Where to Aim", "src": "inferno/a_arch_mid_aim.jpg" }
     ],
-    "notes": "Blocks off lines from the platform/coffin defensive perimeter. Pair this with the CT smoke to completely seal B site."
+    "extraImages": [
+      { "label": "Zoom", "src": "inferno/a_arch_mid_zoom.jpg" },
+      { "label": "Result", "src": "inferno/a_arch_mid_result.jpg" }
+    ],
+    "notes": "Essential A execution piece. Thrown from Mid to completely cut off the Arch lane, blocking CT spawn rotators and isolating the A-site anchors."
   },
   {
-    "id": "inferno-a-pit-molotov",
-    "title": "A Site Pit Core Molotov",
+    "id": "inferno-t-a-arch-smoke-second-mid",
+    "title": "A Arch Smoke (From Second Mid)",
     "side": "t",
-    "types": ["molotov"],
+    "types": ["smoke"],
     "priority": "main",
     "throwType": "Normal",
     "images": [
-      { "label": "Where to Stand", "src": "inferno/a_pit_molotov_stand.jpg" },
-      { "label": "Where to Aim", "src": "inferno/a_pit_molotov_aim.jpg" }
+      { "label": "Where to Stand", "src": "inferno/a_arch_second_mid_stand.jpg" },
+      { "label": "Where to Aim", "src": "inferno/a_arch_second_mid_aim.jpg" }
     ],
-    "notes": "Forces defensive anchors playing in the corner box of Pit out into unsafe visual territory near the lane balcony."
+    "extraImages": [
+      { "label": "Zoom", "src": "inferno/a_arch_second_mid_zoom.jpg" },
+      { "label": "Result", "src": "inferno/a_arch_second_mid_result.jpg" }
+    ],
+    "notes": "Deep setup utility thrown safely from Second Mid. Curtains off the archway entry lines before your team scales up Lane or Boiler."
   },
   {
-    "id": "inferno-a-moto-smoke",
-    "title": "A Moto / Library Smoke (From Second Mid)",
+    "id": "inferno-t-a-library-smoke-top-mid",
+    "title": "A Library Smoke (From Top Mid)",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "inferno/a_library_top_mid_stand.jpg" },
+      { "label": "Where to Aim", "src": "inferno/a_library_top_mid_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "inferno/a_library_top_mid_zoom.jpg" },
+      { "label": "Result", "src": "inferno/a_library_top_mid_result.jpg" }
+    ],
+    "notes": "Executed directly from Top Mid territory. Drops cleanly in front of Library to blind defensive rotators attempting to cover the platform default lines."
+  },
+  {
+    "id": "inferno-t-a-library-smoke-mid",
+    "title": "A Library Smoke (From Mid)",
     "side": "t",
     "types": ["smoke"],
     "priority": "situational",
-    "throwType": "Jumpthrow",
+    "throwType": "Both jumpthrow",
     "images": [
-      { "label": "Where to Stand", "src": "inferno/a_moto_smoke_stand.jpg" },
-      { "label": "Where to Aim", "src": "inferno/a_moto_smoke_aim.jpg" }
+      { "label": "Where to Stand", "src": "inferno/a_library_mid_stand.jpg" },
+      { "label": "Where to Aim", "src": "inferno/a_library_mid_aim.jpg" }
     ],
-    "notes": "Great for A-long wraps or lane pushes. Cuts off cross lines from rotators standing near Library/Moto paths."
+    "extraImages": [
+      { "label": "Zoom", "src": "inferno/a_library_mid_zoom.jpg" },
+      { "label": "Result", "src": "inferno/a_library_mid_result.jpg" }
+    ],
+    "notes": "Backup framework lineup thrown safely from deep Mid to screen off Library vision parameters."
   },
   {
-    "id": "ct-inferno-deep-banana",
-    "title": "Deep Banana Early Control Molotov",
-    "side": "ct",
+    "id": "inferno-t-a-pit-flash-apps",
+    "title": "A Pit Support Flash (From Apartments)",
+    "side": "t",
+    "types": ["flash"],
+    "priority": "main",
+    "throwType": "Crouch throw",
+    "images": [
+      { "label": "Where to Stand", "src": "inferno/a_pit_flash_apps_stand.jpg" },
+      { "label": "Where to Aim", "src": "inferno/a_pit_flash_apps_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "inferno/a_pit_flash_apps_zoom.jpg" },
+      { "label": "Result", "src": "inferno/a_pit_flash_apps_result.jpg" }
+    ],
+    "notes": "Pop-flash thrown out of the Apartments windows. Explodes perfectly over the Pit wall to completely blind anchors holding tight crossfire lines on the Apps exit."
+  },
+  {
+    "id": "inferno-t-a-pit-molotov-apps",
+    "title": "A Pit Molotov (From Apartments)",
+    "side": "t",
     "types": ["molotov"],
     "priority": "main",
-    "throwType": "Normal / Running",
+    "throwType": "Normal",
     "images": [
-      { "label": "Where to Stand", "src": "inferno/ct_banana_molo_stand.jpg" },
-      { "label": "Where to Aim", "src": "inferno/ct_banana_molo_aim.jpg" }
+      { "label": "Where to Stand", "src": "inferno/a_pit_molo_apps_stand.jpg" },
+      { "label": "Where to Aim", "src": "inferno/a_pit_molo_apps_aim.jpg" }
     ],
-    "notes": "Thrown instantly at round entry over B-site wall to deep-burn the bottom of Banana stairs, completely breaking basic T rushes."
+    "extraImages": [
+      { "label": "Zoom", "src": "inferno/a_pit_molo_apps_zoom.jpg" },
+      { "label": "Result", "src": "inferno/a_pit_molo_apps_result.jpg" }
+    ],
+    "notes": "Flushes out aggressive riflemen camping inside the Pit or Mini-Pit pockets. Throw this right before taking space out of the bedroom threshold."
+  },
+  {
+    "id": "inferno-t-b-ct-smoke-halfwall",
+    "title": "B CT Smoke (From Behind Half Wall)",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "inferno/b_halfwall_stand.jpg" },
+      { "label": "Where to Aim", "src": "inferno/b_ct_halfwall_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "inferno/b_ct_halfwall_zoom.jpg" },
+      { "label": "Result", "src": "inferno/b_ct_halfwall_result.jpg" }
+    ],
+    "notes": "Thrown safely while completely tucked and protected behind the Banana Half Wall structure. Blocks the high CT boost and rotation walkway."
+  },
+  {
+    "id": "inferno-t-b-ct-smoke-barrels",
+    "title": "B CT Smoke (From Banana Barrels)",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "inferno/b_banana_barrels_stand.jpg" },
+      { "label": "Where to Aim", "src": "inferno/b_ct_barrels_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "inferno/b_ct_barrels_zoom.jpg" },
+      { "label": "Result", "src": "inferno/b_ct_barrels_result.jpg" }
+    ],
+    "notes": "Alternative CT line thrown from the middle barrels in Banana. Completely blocks visibility from CT spawn to cover the team's entry onto the platform."
+  },
+  {
+    "id": "inferno-t-b-coffins-smoke-barrels",
+    "title": "B Coffins Smoke (From Top Banana Barrels)",
+    "side": "t",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Jumpthrow",
+    "images": [
+      { "label": "Where to Stand", "src": "inferno/b_top_banana_barrels_stand.jpg" },
+      { "label": "Where to Aim", "src": "inferno/b_coffins_barrels_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "inferno/b_coffins_barrels_zoom.jpg" },
+      { "label": "Result", "src": "inferno/b_coffins_barrels_result.jpg" }
+    ],
+    "notes": "Core execute smoke thrown from the barrels at top banana/car. Blinds passive sniper lines on Coffins to cover your entry players rushing site."
+  },
+  {
+    "id": "inferno-t-b-first-boxes-molotov-barrels",
+    "title": "B First Boxes Molotov (From Top Banana Barrels)",
+    "side": "t",
+                "types": ["molotov"],
+    "priority": "main",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "inferno/b_top_banana_barrels_stand.jpg" },
+      { "label": "Where to Aim", "src": "inferno/b_first_boxes_molo_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "inferno/b_first_boxes_molo_zoom.jpg" },
+      { "label": "Result", "src": "inferno/b_first_boxes_molo_result.jpg" }
+    ],
+    "notes": "Thrown from the exact same shared spot at the top banana barrels. Spreads fire directly across First Boxes to flush out close defensive angles."
+  },
+  {
+    "id": "inferno-t-b-quad-molotov-barrels",
+    "title": "B Quad / New Box Molotov (From Top Banana Barrels)",
+    "side": "t",
+    "types": ["molotov"],
+    "priority": "main",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "inferno/b_top_banana_barrels_stand.jpg" },
+      { "label": "Where to Aim", "src": "inferno/b_quad_molo_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "inferno/b_quad_molo_zoom.jpg" },
+      { "label": "Result", "src": "inferno/b_quad_molo_result.jpg" }
+    ],
+    "notes": "Fires directly from the shared top banana barrels position. Saturates the entirety of the deep Quad/New Box pocket to clear out passive crossfire anchors."
+  },
+  {
+    "id": "inferno-ct-banana-halfwall-he",
+    "title": "Banana Half Wall Retaliation HE (From B First Boxes)",
+    "side": "ct",
+    "types": ["he", "molotov"],
+    "priority": "main",
+    "throwType": "Both jumpthrow",
+    "images": [
+      { "label": "Where to Stand", "src": "inferno/ct_b_first_boxes_stand.jpg" },
+      { "label": "Where to Aim", "src": "inferno/ct_halfwall_he_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "inferno/ct_halfwall_he_zoom.jpg" },
+      { "label": "Result", "src": "inferno/ct_halfwall_he_result.jpg" }
+    ],
+    "notes": "Defensive containment grenade thrown from First Boxes to chunk massive damage against T groupings packing up tightly behind the Banana Half Wall."
+  },
+  {
+    "id": "inferno-ct-bottom-banana-smoke-spawn",
+    "title": "Bottom Banana Early Smoke (From CT Spawn)",
+    "side": "ct",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Jumpthrow",
+    "images": [
+      { "label": "Where to Stand", "src": "inferno/ct_spawn_nade_stand.jpg" },
+      { "label": "Where to Aim", "src": "inferno/ct_bottom_banana_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "inferno/ct_bottom_banana_zoom.jpg" },
+      { "label": "Result", "src": "inferno/ct_bottom_banana_result.jpg" }
+    ],
+    "notes": "Crucial round-start timing block thrown deep from CT Spawn tiles. Blooms at Bottom Banana before the T entry rush can cross, completely shutting down their initial vision and pace."
+  },
+  {
+    "id": "inferno-ct-b-entrance-smokemolo-coffins",
+    "title": "B Banana Entrance Smoke & Molotov (From Coffins)",
+    "side": "ct",
+    "types": ["smoke", "molotov", "he"],
+    "priority": "main",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "inferno/ct_back_coffins_stand.jpg" },
+      { "label": "Where to Aim", "src": "inferno/b_entrance_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "inferno/b_entrance_zoom.jpg" },
+      { "label": "Result", "src": "inferno/b_entrance_result.jpg" }
+    ],
+    "notes": "A highly efficient dual-purpose defensive line thrown from behind Coffins. Pulling a Smoke will completely seal the entrance from Banana onto the B platform. Pulling a Molotov instead using the exact same alignment spreads fire directly in front of that boundary line to break up a hard T rush."
+  },
+  {
+    "id": "inferno-ct-top-banana-smoke-entrance",
+    "title": "Top Banana Containment Smoke",
+    "side": "ct",
+    "types": ["smoke"],
+    "priority": "main",
+    "throwType": "Normal",
+    "images": [
+      { "label": "Where to Stand", "src": "inferno/ct_b_entrance_stand.jpg" },
+      { "label": "Where to Aim", "src": "inferno/top_banana_entrance_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Zoom", "src": "inferno/top_banana_entrance_zoom.jpg" },
+      { "label": "Result", "src": "inferno/top_banana_entrance_result.jpg" }
+    ],
+    "notes": "Excellent defensive line used to reset dynamic map control or stall an executive rush. Thrown safely from the CT side of the B site entrance, it blooms perfectly at Top Banana to drop a hard visual wall right in front of the site entry thresholds."
   }
 ]
