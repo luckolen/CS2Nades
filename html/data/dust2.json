@@ -185,5 +185,21 @@
       { "label": "Result", "src": "dust2/back_platform_molotov_result.jpg" }
     ],
     "notes": "Crucial B-retake utility. Spreads deep to force out post-plant T anchors camping safely behind the back platform fencing into open site crossfires."
+  },
+  {
+    "id": "dust2-t-mid-pole-meme",
+    "title": "The Mid Pole Fire-Smoke (Meme Lineup)",
+    "side": "t",
+    "types": ["molotov", "smoke"],
+    "priority": "situational",
+    "throwType": "W + Jumpthrow",
+    "images": [
+      { "label": "Where to Stand", "src": "dust2/mid_pole_meme_stand.jpg" },
+      { "label": "Where to Aim", "src": "dust2/mid_pole_meme_aim.jpg" }
+    ],
+    "extraImages": [
+      { "label": "Result", "src": "dust2/mid_pole_meme_result.jpg" }
+    ],
+    "notes": "The ultimate disrespect lineup. Requires throwing the molotov first, then immediately executing the exact same line with a smoke. If timed perfectly, the smoke blooms directly on top of the narrow Mid light pole while suspended in mid-air above the fire, creating an completely absurd floating smoke structure to confuse Mid AWPers."
   }
 ]
